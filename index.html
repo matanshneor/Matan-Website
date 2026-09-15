@@ -4,6 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Matan Shneor — Data Analyst | MBA, Analytics &amp; Big Data</title>
+  <meta name="description" content="Matan Shneor — MBA graduate of the Hebrew University of Jerusalem (Analytics &amp; Big Data, Finance &amp; Banking) with hands-on experience in Python, SQL and AI-assisted development, seeking a Data Analyst or Business Intelligence role." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Matan Shneor — Data Analyst | MBA, Analytics &amp; Big Data" />
+  <meta property="og:description" content="MBA graduate of the Hebrew University of Jerusalem with hands-on experience in Python, SQL and AI-assisted development, seeking a Data Analyst or Business Intelligence role." />
+  <meta property="og:image" content="images/profile.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Matan Shneor — Data Analyst | MBA, Analytics &amp; Big Data" />
+  <meta name="twitter:description" content="MBA graduate of the Hebrew University of Jerusalem with hands-on experience in Python, SQL and AI-assisted development, seeking a Data Analyst or Business Intelligence role." />
+  <meta name="twitter:image" content="images/profile.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2307111F'/%3E%3Ctext x='50' y='69' font-family='Georgia,serif' font-size='54' font-weight='700' fill='%23C9A84C' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -413,49 +423,14 @@
       background-clip: text;
     }
 
-    /* Subtitle cycling — accessible, stable-height */
-    .hero-role-wrap {
-      height: 36px;
-      overflow: hidden;
-      margin-bottom: 36px;
-      opacity: 0;
-      animation: fadeUp 0.8s 0.40s var(--ease-out) forwards;
-    }
-    .hero-role {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-family: var(--font-body);
-      font-size: clamp(0.95rem, 2vw, 1.15rem);
-      font-weight: 400;
-      color: rgba(255,255,255,0.65);
-      height: 36px;
-      position: absolute;
-      opacity: 0;
-      transform: translateY(16px);
-      white-space: nowrap;
-    }
-    .hero-role::before {
-      content: '';
-      display: block;
-      width: 20px;
-      height: 1px;
-      background: var(--gold);
-      flex-shrink: 0;
-    }
-    .hero-role .hl { color: var(--gold-bright); font-weight: 600; }
-    .hero-role:nth-child(1) { animation: cycleItem 16s 0.6s infinite; }
-    .hero-role:nth-child(2) { animation: cycleItem 16s 4.6s infinite; }
-    .hero-role:nth-child(3) { animation: cycleItem 16s 8.6s infinite; }
-    .hero-role:nth-child(4) { animation: cycleItem 16s 12.6s infinite; }
-
     .hero-meta {
       display: flex;
       flex-wrap: wrap;
       gap: 20px 32px;
       margin-bottom: 52px;
+      margin-top: 36px;
       opacity: 0;
-      animation: fadeUp 0.8s 0.52s var(--ease-out) forwards;
+      animation: fadeUp 0.8s 0.40s var(--ease-out) forwards;
     }
     .hero-meta-item {
       display: flex;
@@ -619,68 +594,9 @@
       line-height: 1.82;
       color: var(--text-secondary);
       margin-bottom: 28px;
-    }
-    .about-body p strong {
-      color: var(--text-primary);
-      font-weight: 600;
+      text-align: justify;
     }
     .about-body p:last-of-type { margin-bottom: 0; }
-
-    .stats-row {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-      margin-top: 48px;
-    }
-    .stat-tile {
-      background: var(--surface-0);
-      border: 1px solid var(--border-light);
-      border-radius: var(--radius-md);
-      padding: 24px 22px;
-      position: relative;
-      overflow: hidden;
-      transition: border-color var(--duration-base) var(--ease-out),
-                  box-shadow var(--duration-base) var(--ease-out),
-                  transform var(--duration-base) var(--ease-out);
-    }
-    .stat-tile::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--gold), var(--gold-bright));
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform var(--duration-slow) var(--ease-out);
-    }
-    .stat-tile:hover {
-      border-color: var(--gold-border);
-      box-shadow: var(--shadow-sm);
-      transform: translateY(-3px);
-    }
-    .stat-tile:hover::after { transform: scaleX(1); }
-    .stat-value {
-      font-family: var(--font-head);
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: var(--text-primary);
-      line-height: 1;
-      margin-bottom: 8px;
-      letter-spacing: -0.03em;
-    }
-    .stat-value sup {
-      font-size: 1.1rem;
-      color: var(--gold);
-      vertical-align: super;
-      line-height: 0;
-    }
-    .stat-label {
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--text-tertiary);
-    }
 
     /* Right column: pillar cards */
     .pillars {
@@ -745,6 +661,7 @@
       font-size: 0.84rem;
       color: var(--text-secondary);
       line-height: 1.65;
+      text-align: justify;
     }
 
     /* ─── Section: Experience ────────────────────────────────────────── */
@@ -919,6 +836,7 @@
       font-size: 0.875rem;
       color: var(--text-secondary);
       line-height: 1.75;
+      text-align: justify;
     }
 
     .timeline {
@@ -997,6 +915,7 @@
       font-size: 0.825rem;
       color: var(--text-tertiary);
       margin-bottom: 16px;
+      text-align: justify;
     }
     .badge-row {
       display: flex;
@@ -1026,6 +945,65 @@
       background: var(--navy-mid);
       border: 1px solid var(--navy-mid);
     }
+
+    /* ─── Section: Projects ──────────────────────────────────────────── */
+    #projects {
+      padding: 120px 0;
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+    }
+    .proj-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+    .proj-tag {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      color: rgba(255,255,255,0.65);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 100px;
+      padding: 4px 11px;
+    }
+    .proj-desc {
+      font-size: 0.84rem;
+      color: rgba(255,255,255,0.58);
+      line-height: 1.65;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+      transition: color var(--duration-base) var(--ease-out);
+    }
+    .proj-tags { margin-top: auto; }
+    .exp-card:hover .proj-desc { color: rgba(255,255,255,0.72); }
+    .proj-link {
+      margin-top: 20px;
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--gold-bright);
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: var(--radius-sm);
+      padding: 9px 16px;
+      transition: all var(--duration-base) var(--ease-out);
+      position: relative;
+      z-index: 1;
+    }
+    .proj-link:hover {
+      background: rgba(201,168,76,0.12);
+      border-color: rgba(201,168,76,0.5);
+      transform: translateY(-2px);
+    }
+    .proj-link svg { width: 14px; height: 14px; flex-shrink: 0; }
 
     /* ─── Section: Skills ────────────────────────────────────────────── */
     #skills {
@@ -1173,6 +1151,7 @@
       font-style: italic;
       color: rgba(255,255,255,0.75);
       line-height: 1.55;
+      text-align: justify;
       margin-bottom: 40px;
     }
     .contact-headline strong {
@@ -1209,6 +1188,7 @@
       font-size: 0.875rem;
       color: rgba(255,255,255,0.6);
       line-height: 1.7;
+      text-align: justify;
     }
     .avail-body strong { color: rgba(255,255,255,0.85); font-weight: 600; }
 
@@ -1311,13 +1291,6 @@
       from { opacity: 0; transform: translateY(24px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-    @keyframes cycleItem {
-      0%   { opacity: 0; transform: translateY(14px); }
-      6%   { opacity: 1; transform: translateY(0); }
-      22%  { opacity: 1; transform: translateY(0); }
-      28%  { opacity: 0; transform: translateY(-14px); }
-      100% { opacity: 0; transform: translateY(-14px); }
-    }
     @keyframes scroll-bob {
       0%, 100% { transform: translateX(-50%) translateY(0);   opacity: 0.8; }
       50%       { transform: translateX(-50%) translateY(9px); opacity: 0.25; }
@@ -1365,11 +1338,7 @@
       :root { --gutter: 18px; }
       .hero-actions    { flex-direction: column; }
       .hero-actions .btn { justify-content: center; }
-      .stats-row       { grid-template-columns: repeat(2, 1fr); }
       .footer-inner    { flex-direction: column; align-items: flex-start; gap: 12px; }
-    }
-    @media (max-width: 420px) {
-      .stats-row { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -1385,6 +1354,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
@@ -1399,6 +1369,7 @@
     <a href="#about"      onclick="closeDrawer()">About</a>
     <a href="#experience" onclick="closeDrawer()">Experience</a>
     <a href="#education"  onclick="closeDrawer()">Education</a>
+    <a href="#projects"   onclick="closeDrawer()">Projects</a>
     <a href="#skills"     onclick="closeDrawer()">Skills</a>
     <a href="#contact"    onclick="closeDrawer()" class="drawer-cta">Contact</a>
   </nav>
@@ -1416,7 +1387,7 @@
 
         <div class="hero-kicker" aria-label="Current status">
           <span class="hero-kicker-dot" aria-hidden="true"></span>
-          <span class="hero-kicker-text">MBA Graduate &mdash; Hebrew University of Jerusalem</span>
+          <span class="hero-kicker-text">MBA &mdash; Hebrew University of Jerusalem</span>
         </div>
 
         <h1 class="hero-name">
@@ -1424,19 +1395,18 @@
           <span class="hero-name-last">Shneor</span>
         </h1>
 
-        <div class="hero-role-wrap" aria-label="Professional focus areas">
-          <p class="hero-role">Data Analyst &amp; <span class="hl">Business Intelligence</span></p>
-          <p class="hero-role">Analytics &amp; <span class="hl">Big Data</span> Specialist</p>
-          <p class="hero-role">Finance &amp; <span class="hl">Banking</span> Professional</p>
-          <p class="hero-role">MBA Graduate &mdash; <span class="hl">GPA 90</span></p>
-        </div>
-
         <div class="hero-meta">
           <a href="https://www.linkedin.com/in/matan-shneor-5830583a1/" target="_blank" rel="noopener" class="hero-meta-item" aria-label="LinkedIn profile">
             <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" aria-hidden="true">
               <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zm2-3a2 2 0 100-4 2 2 0 000 4z"/>
             </svg>
             linkedin.com/in/matan-shneor
+          </a>
+          <a href="https://github.com/matanshneor" target="_blank" rel="noopener" class="hero-meta-item" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" aria-hidden="true">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+            github.com/matanshneor
           </a>
           <a href="tel:054-216-5560" class="hero-meta-item" aria-label="Phone number">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15" aria-hidden="true">
@@ -1493,41 +1463,23 @@
             </div>
           </div>
           <p>
-            I am an MBA graduate of the <strong>Hebrew University of Jerusalem</strong>, with dual specializations
-            in Analytics &amp; Big Data and Finance &amp; Banking &mdash; completed with a <strong>GPA of 90</strong>.
-            My academic rigor is matched by real-world experience: over 5 years of professional management,
-            proving that data-driven decisions and strong leadership translate directly into business results.
+            I am an MBA graduate of the Hebrew University of Jerusalem, with dual specializations
+            in Analytics &amp; Big Data and Finance &mdash; completed with a GPA of 87.
+            My academic rigor is matched by real-world experience: three years of
+            P&amp;L ownership of a business generating &#8362;8M in annual revenue, alongside academic work in
+            predictive modeling and data analysis.
           </p>
           <p>
-            I complemented my MBA with a <strong>250-hour AI Developer course</strong> at HU&apos;s Executive
-            Training Center (The Hi-Tech Academy) &mdash; Python, SQL, prompt engineering, and AI agents &mdash;
+            I complemented a 250-hour AI Developer course at The Hi-Tech Academy of the Hebrew University
+            &mdash; Python, SQL, prompt engineering, and AI agents &mdash;
             building independent automation and data projects with AI-assisted development tools such as
-            <strong>Cursor and Claude Code</strong>.
+            Cursor and Claude Code.
           </p>
           <p>
-            Highly skilled at translating complex datasets into <strong>actionable business insights</strong> and
-            financial models, I am seeking a challenging <strong>Data Analyst or Business Intelligence</strong> role
-            where I can drive data-informed decision making from day one.
+            Proficient in data manipulation using Python (Pandas/NumPy), SQL, and Excel, I am
+            seeking a challenging Data Analyst or Business Intelligence role where I can drive
+            data-informed decision making from day one.
           </p>
-
-          <div class="stats-row">
-            <div class="stat-tile">
-              <div class="stat-value">5<sup>+</sup></div>
-              <div class="stat-label">Years Business Management</div>
-            </div>
-            <div class="stat-tile">
-              <div class="stat-value">90</div>
-              <div class="stat-label">MBA GPA</div>
-            </div>
-            <div class="stat-tile">
-              <div class="stat-value">15<sup>+</sup></div>
-              <div class="stat-label">Team Members Led</div>
-            </div>
-            <div class="stat-tile">
-              <div class="stat-value">250<sup>h</sup></div>
-              <div class="stat-label">AI Developer Training</div>
-            </div>
-          </div>
         </div>
 
         <div class="pillars">
@@ -1539,15 +1491,16 @@
             </div>
             <div class="pillar-body">
               <h3 class="pillar-title">Analytics &amp; Big Data</h3>
-              <p class="pillar-text">Applying quantitative methods and financial modeling to solve complex business problems and uncover actionable insights.</p>
+              <p class="pillar-text">Applying quantitative methods, predictive modeling, and churn analysis to solve complex business problems and uncover actionable insights.</p>
             </div>
           </div>
 
           <div class="pillar">
             <div class="pillar-icon-wrap" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <rect x="2" y="3" width="20" height="14" rx="2"/>
-                <path d="M8 21h8M12 17v4"/>
+                <path d="M2 9l10-6 10 6"/>
+                <path d="M5 21V10M10 21V10M14 21V10M19 21V10"/>
+                <path d="M2 21h20"/>
               </svg>
             </div>
             <div class="pillar-body">
@@ -1579,7 +1532,7 @@
             </div>
             <div class="pillar-body">
               <h3 class="pillar-title">Leadership &amp; Operations</h3>
-              <p class="pillar-text">Proven ability to recruit, train and manage teams under pressure, with full operational accountability from supply chain to P&amp;L.</p>
+              <p class="pillar-text">Proven ability to recruit, train and manage teams under pressure, with full P&amp;L accountability for a &#8362;8M-revenue operation.</p>
             </div>
           </div>
         </div>
@@ -1600,12 +1553,13 @@
 
         <article class="exp-card">
           <span class="exp-period-badge">2023 &ndash; 2026</span>
-          <h3 class="exp-role">Owner &amp; Manager</h3>
-          <p class="exp-org">Fast Food Business &mdash; Jerusalem</p>
+          <h3 class="exp-role">Co-Owner &amp; General Manager</h3>
+          <p class="exp-org">Food &amp; Beverage Business &mdash; Jerusalem</p>
           <div class="exp-divider" aria-hidden="true"></div>
           <ul class="exp-bullets">
+            <li>Held full P&amp;L accountability for a single-location operation with &#8362;8M annual revenue</li>
             <li>Analyzed sales, financial data (P&amp;L), and business performance to optimize operations and drive profitability</li>
-            <li>Managed localized supply chain, inventory analytics, and product pricing with full P&amp;L accountability</li>
+            <li>Managed localized supply chain, inventory analytics, and product pricing</li>
             <li>Recruited, trained, and led a team of 15 employees under high operational pressure</li>
           </ul>
         </article>
@@ -1616,9 +1570,9 @@
           <p class="exp-org">Hebrew University of Jerusalem</p>
           <div class="exp-divider" aria-hidden="true"></div>
           <ul class="exp-bullets">
-            <li>Analyzed business data, built financial models, and evaluated pricing strategies for crisis recovery</li>
-            <li>Developed data-backed recovery plans and optimized operational cost structures for financial stability</li>
-            <li>Streamlined workflows and managerial processes based on quantitative evaluations</li>
+            <li>Provided pro-bono analytical consulting to a small business in the Gaza-border region, as part of a university-led economic recovery initiative following October 7th</li>
+            <li>Analyzed cost structure and operational workflows, and evaluated pricing strategies to support the business&apos;s return to stability</li>
+            <li>Developed data-backed recovery plans and streamlined managerial processes based on quantitative evaluations</li>
           </ul>
         </article>
 
@@ -1628,8 +1582,8 @@
           <p class="exp-org">Ministry of Education &mdash; Israel</p>
           <div class="exp-divider" aria-hidden="true"></div>
           <ul class="exp-bullets">
-            <li>Managed requests, tracked milestones, and verified data for student accessibility projects</li>
-            <li>Allocated and monitored budget commitments, ensuring alignment with regulatory and timeline requirements</li>
+            <li>Processed and verified financial guarantees for student accessibility projects, in amounts up to several hundred thousand ILS</li>
+            <li>Tracked project milestones and monitored budget commitments, ensuring alignment with regulatory and timeline requirements</li>
             <li>Interfaced directly with public institutions, government ministries, and local authorities</li>
           </ul>
         </article>
@@ -1662,30 +1616,11 @@
               <div class="timeline-dot"></div>
             </div>
             <div class="timeline-card">
-              <div class="timeline-year">2026</div>
-              <h3 class="timeline-degree">AI Developer Course</h3>
-              <p class="timeline-school">Executive Training Center, Hebrew University &mdash; The Hi-Tech Academy</p>
-              <div class="badge-row">
-                <span class="badge badge-outline">250 Hours</span>
-                <span class="badge badge-gold">Python</span>
-                <span class="badge badge-gold">SQL</span>
-                <span class="badge badge-gold">AI Agents</span>
-                <span class="badge badge-outline">Prompt Engineering</span>
-                <span class="badge badge-outline">Automation</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-item" role="listitem">
-            <div class="timeline-node">
-              <div class="timeline-dot"></div>
-            </div>
-            <div class="timeline-card">
               <div class="timeline-year">2024 &ndash; 2026</div>
               <h3 class="timeline-degree">MBA &mdash; Master of Business Administration</h3>
-              <p class="timeline-school">Hebrew University of Jerusalem</p>
+              <p class="timeline-school">Hebrew University of Jerusalem &mdash; Seminar: customer churn analysis for a commercial dataset (model training &amp; evaluation)</p>
               <div class="badge-row">
-                <span class="badge badge-navy">GPA: 90</span>
+                <span class="badge badge-navy">GPA: 87</span>
                 <span class="badge badge-gold">Analytics &amp; Big Data</span>
                 <span class="badge badge-gold">Finance &amp; Banking</span>
                 <span class="badge badge-outline">Graduation Complete</span>
@@ -1714,19 +1649,93 @@
               <div class="timeline-dot"></div>
             </div>
             <div class="timeline-card">
-              <div class="timeline-year">2012 &ndash; 2018</div>
-              <h3 class="timeline-degree">Full Bagrut &mdash; Hartman High School</h3>
-              <p class="timeline-school">Jerusalem</p>
+              <div class="timeline-year">2026</div>
+              <h3 class="timeline-degree">AI Developer Course</h3>
+              <p class="timeline-school">Executive Training Center, Hebrew University &mdash; The Hi-Tech Academy</p>
               <div class="badge-row">
-                <span class="badge badge-navy">Average: 111</span>
-                <span class="badge badge-outline">Computers Major</span>
-                <span class="badge badge-outline">5 Units Math</span>
-                <span class="badge badge-outline">5 Units English</span>
+                <span class="badge badge-outline">250 Hours</span>
+                <span class="badge badge-gold">Python</span>
+                <span class="badge badge-gold">SQL</span>
+                <span class="badge badge-gold">AI Agents</span>
+                <span class="badge badge-outline">Prompt Engineering</span>
+                <span class="badge badge-outline">Automation</span>
               </div>
             </div>
           </div>
 
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Projects ─────────────────────────────────────────────────────── -->
+  <section id="projects" aria-labelledby="projects-heading">
+    <div class="exp-bg" aria-hidden="true"></div>
+    <div class="exp-bg-glow" aria-hidden="true"></div>
+    <div class="container" style="position:relative;z-index:1;">
+      <span class="section-eyebrow on-dark" aria-hidden="true">Independent Work</span>
+      <h2 id="projects-heading" class="section-title on-dark">Featured <em>Projects</em></h2>
+
+      <div class="exp-cards">
+
+        <article class="exp-card">
+          <span class="exp-period-badge">Live App</span>
+          <h3 class="exp-role">Household Finance Management App</h3>
+          <p class="exp-org">Independent Project &mdash; Built &amp; Deployed End-to-End</p>
+          <div class="exp-divider" aria-hidden="true"></div>
+          <p class="proj-desc">
+            Web application for tracking and analyzing household income, expenses, and cost categories.
+            Integrated the OpenAI API to extract structured data from receipt images and auto-categorize
+            transactions. Built end-to-end independently and deployed to production.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">Python (Flask)</span>
+            <span class="proj-tag">Supabase</span>
+            <span class="proj-tag">OpenAI API</span>
+            <span class="proj-tag">Railway</span>
+          </div>
+          <a href="https://smartfin.up.railway.app/" target="_blank" rel="noopener" class="proj-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+            View Live App
+          </a>
+        </article>
+
+        <article class="exp-card">
+          <span class="exp-period-badge">Production</span>
+          <h3 class="exp-role">Marketing Ad-Generation Platform</h3>
+          <p class="exp-org">Built for a Real Estate Agency</p>
+          <div class="exp-divider" aria-hidden="true"></div>
+          <p class="proj-desc">
+            Platform built for a real estate agency that automatically generates listing advertisements.
+            Deployed and actively used in production by the client.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">AI-Generated Content</span>
+            <span class="proj-tag">Real Estate</span>
+            <span class="proj-tag">Client Deployment</span>
+          </div>
+        </article>
+
+        <article class="exp-card">
+          <span class="exp-period-badge">MBA Seminar</span>
+          <h3 class="exp-role">Customer Churn Analysis</h3>
+          <p class="exp-org">Academic Research &mdash; Predictive Modeling</p>
+          <div class="exp-divider" aria-hidden="true"></div>
+          <p class="proj-desc">
+            Analyzed behavioral patterns in customer data to identify churn drivers and build a predictive
+            model, with visualization of key customer segments.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">Python (Pandas)</span>
+            <span class="proj-tag">scikit-learn</span>
+            <span class="proj-tag">Data Visualization</span>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -1751,10 +1760,10 @@
           </div>
           <div class="skill-chips">
             <span class="skill-chip">Python (Pandas / NumPy)</span>
+            <span class="skill-chip">Matplotlib / Seaborn</span>
             <span class="skill-chip">SQL</span>
-            <span class="skill-chip">GitHub</span>
-            <span class="skill-chip">Advanced Excel</span>
-            <span class="skill-chip">Data Manipulation</span>
+            <span class="skill-chip">Git / GitHub</span>
+            <span class="skill-chip">Advanced Excel (Modeling, Pivots)</span>
           </div>
         </div>
 
@@ -1762,7 +1771,9 @@
           <div class="skill-group-header">
             <div class="skill-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M18 20V10M12 20V4M6 20v-6"/>
+                <rect x="8" y="8" width="8" height="8" rx="1"/>
+                <rect x="4" y="4" width="16" height="16" rx="2"/>
+                <path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/>
               </svg>
             </div>
             <h3 class="skill-group-name">AI &amp; Automation</h3>
@@ -1791,8 +1802,9 @@
           <div class="skill-chips">
             <span class="skill-chip">P&amp;L Management</span>
             <span class="skill-chip">Financial Modeling</span>
-            <span class="skill-chip">Budgeting</span>
-            <span class="skill-chip">Supply Chain Data Analytics</span>
+            <span class="skill-chip">Pricing Strategy</span>
+            <span class="skill-chip">Supply Chain &amp; Inventory Analytics</span>
+            <span class="skill-chip">Statistical Analysis &amp; Regression</span>
           </div>
         </div>
 
@@ -1800,7 +1812,8 @@
           <div class="skill-group-header">
             <div class="skill-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M18 20V10M12 20V4M6 20v-6"/>
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                <polyline points="17 6 23 6 23 12"/>
               </svg>
             </div>
             <h3 class="skill-group-name">Business Analytics</h3>
@@ -1825,7 +1838,7 @@
           </div>
           <div class="skill-chips">
             <span class="skill-chip">Hebrew &mdash; Native</span>
-            <span class="skill-chip">English &mdash; High (5 Units)</span>
+            <span class="skill-chip">English &mdash; Professional Working Proficiency</span>
             <span class="skill-chip">Arabic &mdash; Basic</span>
           </div>
         </div>
@@ -1920,6 +1933,18 @@
             </div>
           </a>
 
+          <a href="https://github.com/matanshneor" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">github.com/matanshneor</div>
+            </div>
+          </a>
+
           <div class="contact-item">
             <div class="contact-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1929,7 +1954,7 @@
             </div>
             <div>
               <div class="contact-label">Location</div>
-              <div class="contact-value">West Jerusalem, Israel</div>
+              <div class="contact-value">Jerusalem, Israel</div>
             </div>
           </div>
         </div>
@@ -1941,7 +1966,7 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">Matan <span>Shneor</span></div>
-      <p class="footer-note">&copy; 2026 &mdash; MBA Graduate, Hebrew University of Jerusalem</p>
+      <p class="footer-note">&copy; 2026 &mdash; MBA, Hebrew University of Jerusalem</p>
       <div class="footer-links">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
