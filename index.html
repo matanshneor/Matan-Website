@@ -1,2026 +1,399 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr" data-title-en="Matan Shneor — Data &amp; Business Analyst | Portfolio" data-title-he="מתן שניאור — אנליסט נתונים ועסקים | תיק עבודות" data-desc-en="Matan Shneor: MBA (Big Data &amp; Analytics), three years of full P&amp;L ownership of a business, and AI-powered systems in production. Portfolio, services and contact." data-desc-he="מתן שניאור: MBA בביג דאטה ואנליטיקה, 3 שנים של ניהול ובעלות עסק, ומערכות AI שעובדות בשטח. תיק עבודות, שירותים ויצירת קשר.">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Matan Shneor — Data Analyst | MBA, Analytics &amp; Big Data</title>
-  <meta name="description" content="Matan Shneor — MBA graduate of the Hebrew University of Jerusalem (Analytics &amp; Big Data, Finance &amp; Banking) with hands-on experience in Python, SQL and AI-assisted development, seeking a Data Analyst or Business Intelligence role." />
-  <meta property="og:type" content="profile" />
-  <meta property="og:title" content="Matan Shneor — Data Analyst | MBA, Analytics &amp; Big Data" />
-  <meta property="og:description" content="MBA graduate of the Hebrew University of Jerusalem with hands-on experience in Python, SQL and AI-assisted development, seeking a Data Analyst or Business Intelligence role." />
-  <meta property="og:image" content="images/profile.jpg" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Matan Shneor — Data Analyst | MBA, Analytics &amp; Big Data" />
-  <meta name="twitter:description" content="MBA graduate of the Hebrew University of Jerusalem with hands-on experience in Python, SQL and AI-assisted development, seeking a Data Analyst or Business Intelligence role." />
-  <meta name="twitter:image" content="images/profile.jpg" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2307111F'/%3E%3Ctext x='50' y='69' font-family='Georgia,serif' font-size='54' font-weight='700' fill='%23C9A84C' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Matan Shneor — Data &amp; Business Analyst | Portfolio</title>
+  <meta name="description" content="Matan Shneor: MBA (Big Data &amp; Analytics), three years of full P&amp;L ownership of a business, and AI-powered systems in production. Portfolio, services and contact." />
+  <meta name="theme-color" content="#07111F" />
+  <link rel="canonical" href="https://matanshneor.github.io/Matan-Website/" />
+  <link rel="alternate" hreflang="en" href="https://matanshneor.github.io/Matan-Website/" />
+  <link rel="alternate" hreflang="he" href="https://matanshneor.github.io/Matan-Website/?lang=he" />
+  <link rel="alternate" hreflang="x-default" href="https://matanshneor.github.io/Matan-Website/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://matanshneor.github.io/Matan-Website/" />
+  <meta property="og:title" content="Matan Shneor — Data &amp; Business Analyst | Portfolio" />
+  <meta property="og:description" content="Matan Shneor: MBA (Big Data &amp; Analytics), three years of full P&amp;L ownership of a business, and AI-powered systems in production. Portfolio, services and contact." />
+  <meta property="og:image" content="https://matanshneor.github.io/Matan-Website/images/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2307111F'/%3E%3Ctext x='50' y='68' font-family='Helvetica,Arial,sans-serif' font-size='44' font-weight='700' fill='%23C9A84C' text-anchor='middle'%3EMS%3C/text%3E%3C/svg%3E" />
+  <script>(function(){var l='en';try{var q=new URLSearchParams(location.search).get('lang');var s=localStorage.getItem('lang');if(q==='he'||q==='en'){l=q;localStorage.setItem('lang',q);}else if(s==='he'||s==='en'){l=s;}}catch(e){}var d=document.documentElement;d.lang=l;d.dir=l==='he'?'rtl':'ltr';d.className+=' js';})();</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <style>
-    /* ─── Design Tokens ──────────────────────────────────────────────── */
-    :root {
-      /* Core palette */
-      --navy:          #07111F;
-      --navy-mid:      #0C1C35;
-      --navy-light:    #132540;
-      --navy-surface:  #192D4C;
-      --gold:          #C9A84C;
-      --gold-bright:   #D4B56A;
-      --gold-muted:    #A8873A;
-      --gold-pale:     rgba(201,168,76,0.08);
-      --gold-border:   rgba(201,168,76,0.22);
-
-      /* Light surface palette */
-      --white:         #FFFFFF;
-      --surface-0:     #FAFBFC;
-      --surface-1:     #F4F6F9;
-      --surface-2:     #EBEEF4;
-      --border-light:  #E2E6EE;
-
-      /* Text */
-      --text-primary:  #131D2E;
-      --text-secondary:#4A5568;
-      --text-tertiary: #8896A8;
-
-      /* Fonts */
-      --font-head: 'Playfair Display', Georgia, serif;
-      --font-body: 'Inter', system-ui, -apple-system, sans-serif;
-
-      /* Elevation */
-      --shadow-xs:  0 1px 3px rgba(7,17,31,0.06), 0 1px 2px rgba(7,17,31,0.04);
-      --shadow-sm:  0 4px 12px rgba(7,17,31,0.08), 0 2px 4px rgba(7,17,31,0.05);
-      --shadow-md:  0 12px 32px rgba(7,17,31,0.10), 0 4px 8px rgba(7,17,31,0.06);
-      --shadow-lg:  0 24px 56px rgba(7,17,31,0.14), 0 8px 16px rgba(7,17,31,0.08);
-      --shadow-xl:  0 40px 80px rgba(7,17,31,0.18), 0 16px 32px rgba(7,17,31,0.10);
-      --shadow-gold: 0 8px 32px rgba(201,168,76,0.28);
-
-      /* Geometry */
-      --radius-sm: 8px;
-      --radius-md: 14px;
-      --radius-lg: 20px;
-      --radius-xl: 28px;
-
-      /* Motion */
-      --ease-out:  cubic-bezier(0.16, 1, 0.3, 1);
-      --ease-in:   cubic-bezier(0.4, 0, 1, 1);
-      --ease-both: cubic-bezier(0.45, 0, 0.55, 1);
-      --duration-fast:   150ms;
-      --duration-base:   250ms;
-      --duration-slow:   400ms;
-      --duration-slower: 600ms;
-
-      /* Layout */
-      --nav-h: 68px;
-      --container: 1160px;
-      --gutter: 32px;
-    }
-
-    /* ─── Reset ──────────────────────────────────────────────────────── */
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    html {
-      scroll-behavior: smooth;
-      font-size: 16px;
-      scroll-padding-top: calc(var(--nav-h) + 16px);
-    }
-    body {
-      font-family: var(--font-body);
-      color: var(--text-primary);
-      background: var(--white);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-    a { color: inherit; text-decoration: none; }
-    ul { list-style: none; }
-    img { display: block; max-width: 100%; }
-
-    /* Focus-visible ring — accessibility */
-    :focus-visible {
-      outline: 2px solid var(--gold);
-      outline-offset: 3px;
-      border-radius: 4px;
-    }
-
-    /* Reduced motion */
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-      }
-      html { scroll-behavior: auto; }
-    }
-
-    /* ─── Layout Utilities ───────────────────────────────────────────── */
-    .container {
-      width: 100%;
-      max-width: var(--container);
-      margin: 0 auto;
-      padding: 0 var(--gutter);
-    }
-
-    /* ─── Section Header Pattern ─────────────────────────────────────── */
-    .section-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      font-family: var(--font-body);
-      font-size: 0.688rem;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 20px;
-    }
-    .section-eyebrow::before {
-      content: '';
-      display: block;
-      width: 28px;
-      height: 1px;
-      background: var(--gold);
-      flex-shrink: 0;
-    }
-    .section-title {
-      font-family: var(--font-head);
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 700;
-      color: var(--text-primary);
-      line-height: 1.15;
-      letter-spacing: -0.02em;
-      margin-bottom: 56px;
-    }
-    .section-title em {
-      font-style: italic;
-      color: var(--gold);
-    }
-    /* Dark section variants */
-    .on-dark .section-eyebrow { color: var(--gold-bright); }
-    .on-dark .section-title   { color: var(--white); }
-    .on-dark .section-title em { color: var(--gold); }
-
-    /* ─── Navigation ─────────────────────────────────────────────────── */
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 900;
-      height: var(--nav-h);
-      display: flex;
-      align-items: center;
-      padding: 0 var(--gutter);
-      background: rgba(7, 17, 31, 0.88);
-      backdrop-filter: blur(20px) saturate(180%);
-      -webkit-backdrop-filter: blur(20px) saturate(180%);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-      transition: background var(--duration-slow) var(--ease-out),
-                  box-shadow var(--duration-slow) var(--ease-out);
-    }
-    nav.scrolled {
-      background: rgba(7, 17, 31, 0.97);
-      box-shadow: 0 4px 32px rgba(7,17,31,0.35);
-    }
-    .nav-inner {
-      max-width: var(--container);
-      width: 100%;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .nav-logo {
-      font-family: var(--font-head);
-      font-size: 1.125rem;
-      font-weight: 700;
-      color: var(--white);
-      letter-spacing: -0.01em;
-      display: flex;
-      align-items: center;
-      gap: 2px;
-    }
-    .nav-logo .dot {
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--gold);
-      margin: 0 3px 0 4px;
-      flex-shrink: 0;
-    }
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 2px;
-    }
-    .nav-links a {
-      font-size: 0.8rem;
-      font-weight: 500;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.6);
-      padding: 8px 14px;
-      border-radius: var(--radius-sm);
-      transition: color var(--duration-base) var(--ease-out),
-                  background var(--duration-base) var(--ease-out);
-    }
-    .nav-links a:hover {
-      color: var(--white);
-      background: rgba(255,255,255,0.07);
-    }
-    .nav-links a.nav-cta {
-      margin-left: 8px;
-      color: var(--navy);
-      background: var(--gold);
-      font-weight: 700;
-      padding: 9px 20px;
-      border-radius: var(--radius-sm);
-      transition: background var(--duration-base) var(--ease-out),
-                  transform var(--duration-base) var(--ease-out),
-                  box-shadow var(--duration-base) var(--ease-out);
-    }
-    .nav-links a.nav-cta:hover {
-      background: var(--gold-bright);
-      transform: translateY(-1px);
-      box-shadow: 0 4px 16px rgba(201,168,76,0.4);
-    }
-
-    /* Hamburger */
-    .nav-hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      width: 28px;
-      cursor: pointer;
-      padding: 4px;
-      border: none;
-      background: transparent;
-    }
-    .nav-hamburger span {
-      display: block;
-      height: 2px;
-      background: rgba(255,255,255,0.75);
-      border-radius: 2px;
-      transition: all var(--duration-base) var(--ease-out);
-    }
-    .nav-hamburger.open span:nth-child(1) {
-      transform: translateY(7px) rotate(45deg);
-    }
-    .nav-hamburger.open span:nth-child(2) {
-      opacity: 0;
-    }
-    .nav-hamburger.open span:nth-child(3) {
-      transform: translateY(-7px) rotate(-45deg);
-    }
-
-    /* Mobile drawer */
-    .nav-drawer {
-      display: none;
-      position: fixed;
-      top: var(--nav-h);
-      left: 0; right: 0;
-      background: rgba(7,17,31,0.98);
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      border-bottom: 1px solid rgba(255,255,255,0.07);
-      padding: 20px var(--gutter) 28px;
-      z-index: 899;
-      flex-direction: column;
-      gap: 4px;
-    }
-    .nav-drawer.open { display: flex; }
-    .nav-drawer a {
-      font-size: 0.875rem;
-      font-weight: 500;
-      color: rgba(255,255,255,0.7);
-      padding: 13px 16px;
-      border-radius: var(--radius-sm);
-      border: 1px solid transparent;
-      transition: all var(--duration-base) var(--ease-out);
-    }
-    .nav-drawer a:hover {
-      color: var(--white);
-      background: rgba(255,255,255,0.06);
-    }
-    .nav-drawer a.drawer-cta {
-      margin-top: 12px;
-      text-align: center;
-      color: var(--navy);
-      background: var(--gold);
-      font-weight: 700;
-      border-color: var(--gold);
-    }
-
-    /* ─── Hero ───────────────────────────────────────────────────────── */
-    header#hero {
-      min-height: 100svh;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-      background: var(--navy);
-      padding-top: var(--nav-h);
-    }
-
-    /* Multi-layer background atmosphere */
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-    }
-    .hero-bg-gradient {
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 90% 70% at 65% 35%, rgba(201,168,76,0.09) 0%, transparent 65%),
-        radial-gradient(ellipse 50% 80% at 15% 75%, rgba(19,37,64,0.9) 0%, transparent 60%),
-        linear-gradient(158deg, #07111F 0%, #0C1C35 45%, #09162A 100%);
-    }
-    .hero-bg-grid {
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
-      background-size: 72px 72px;
-      mask-image: radial-gradient(ellipse 80% 80% at 50% 40%, black 30%, transparent 100%);
-    }
-    /* Large decorative letter */
-    .hero-bg-monogram {
-      position: absolute;
-      right: -2%;
-      top: 50%;
-      transform: translateY(-50%);
-      font-family: var(--font-head);
-      font-size: clamp(280px, 30vw, 480px);
-      font-weight: 900;
-      line-height: 1;
-      color: transparent;
-      -webkit-text-stroke: 1px rgba(201,168,76,0.06);
-      user-select: none;
-      letter-spacing: -0.05em;
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      padding: 64px 0 80px;
-    }
-
-    .hero-kicker {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: rgba(201,168,76,0.10);
-      border: 1px solid rgba(201,168,76,0.25);
-      border-radius: 100px;
-      padding: 7px 18px;
-      margin-bottom: 40px;
-      opacity: 0;
-      animation: fadeUp 0.7s 0.15s var(--ease-out) forwards;
-    }
-    .hero-kicker-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: var(--gold);
-      animation: pulse-dot 2.4s ease-in-out infinite;
-      flex-shrink: 0;
-    }
-    .hero-kicker-text {
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--gold);
-    }
-
-    .hero-name {
-      font-family: var(--font-head);
-      font-weight: 900;
-      line-height: 0.95;
-      letter-spacing: -0.035em;
-      margin-bottom: 36px;
-      opacity: 0;
-      animation: fadeUp 0.8s 0.28s var(--ease-out) forwards;
-    }
-    .hero-name-first {
-      display: block;
-      font-size: clamp(3.5rem, 9vw, 7.5rem);
-      color: var(--white);
-    }
-    .hero-name-last {
-      display: block;
-      font-size: clamp(3.5rem, 9vw, 7.5rem);
-      /* Gold filled with a subtle warm gradient */
-      background: linear-gradient(135deg, #C9A84C 0%, #E2C67A 45%, #B8903F 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .hero-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px 32px;
-      margin-bottom: 52px;
-      margin-top: 36px;
-      opacity: 0;
-      animation: fadeUp 0.8s 0.40s var(--ease-out) forwards;
-    }
-    .hero-meta-item {
-      display: flex;
-      align-items: center;
-      gap: 9px;
-      font-size: 0.84rem;
-      color: rgba(255,255,255,0.52);
-      transition: color var(--duration-base) var(--ease-out);
-    }
-    .hero-meta-item:hover { color: rgba(255,255,255,0.85); }
-    .hero-meta-item svg {
-      width: 15px;
-      height: 15px;
-      color: var(--gold);
-      flex-shrink: 0;
-    }
-
-    .hero-actions {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      opacity: 0;
-      animation: fadeUp 0.8s 0.64s var(--ease-out) forwards;
-    }
-
-    /* Buttons */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      font-family: var(--font-body);
-      font-size: 0.875rem;
-      font-weight: 600;
-      letter-spacing: 0.025em;
-      padding: 14px 28px;
-      border-radius: var(--radius-sm);
-      border: none;
-      cursor: pointer;
-      transition:
-        background var(--duration-base) var(--ease-out),
-        color var(--duration-base) var(--ease-out),
-        transform var(--duration-base) var(--ease-out),
-        box-shadow var(--duration-base) var(--ease-out),
-        border-color var(--duration-base) var(--ease-out);
-    }
-    .btn svg { flex-shrink: 0; }
-    .btn-primary {
-      background: var(--gold);
-      color: var(--navy);
-    }
-    .btn-primary:hover {
-      background: var(--gold-bright);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-gold);
-    }
-    .btn-primary:active { transform: translateY(0); }
-    .btn-ghost {
-      background: transparent;
-      color: rgba(255,255,255,0.75);
-      border: 1.5px solid rgba(255,255,255,0.2);
-    }
-    .btn-ghost:hover {
-      color: var(--white);
-      border-color: rgba(255,255,255,0.5);
-      transform: translateY(-2px);
-    }
-
-    /* Scroll indicator */
-    .scroll-hint {
-      position: absolute;
-      bottom: 36px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      opacity: 0;
-      animation: fadeUp 1s 1.4s var(--ease-out) forwards;
-    }
-    .scroll-hint-label {
-      font-size: 0.64rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.28);
-    }
-    .scroll-mouse {
-      width: 24px;
-      height: 38px;
-      border: 1.5px solid rgba(255,255,255,0.18);
-      border-radius: 12px;
-      position: relative;
-    }
-    .scroll-mouse::after {
-      content: '';
-      position: absolute;
-      top: 7px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 3px;
-      height: 8px;
-      background: rgba(255,255,255,0.35);
-      border-radius: 2px;
-      animation: scroll-bob 1.8s ease-in-out infinite;
-    }
-
-    /* ─── Section: About ─────────────────────────────────────────────── */
-    #about {
-      padding: 120px 0;
-      background: var(--white);
-    }
-    .about-layout {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: start;
-    }
-
-    /* Profile photo */
-    .about-photo-wrap {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 40px;
-    }
-    .about-photo-frame {
-      position: relative;
-      width: 200px;
-      height: 200px;
-      flex-shrink: 0;
-    }
-    .about-photo-frame::before {
-      content: '';
-      position: absolute;
-      inset: -4px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-bright) 50%, var(--gold-muted) 100%);
-      z-index: 0;
-    }
-    .about-photo-frame::after {
-      content: '';
-      position: absolute;
-      inset: 2px;
-      border-radius: 50%;
-      background: var(--white);
-      z-index: 1;
-    }
-    .about-photo {
-      position: absolute;
-      inset: 6px;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: top center;
-      z-index: 2;
-      width: calc(100% - 12px);
-      height: calc(100% - 12px);
-    }
-
-    /* Left column: text + stats */
-    .about-body p {
-      font-size: 1.0625rem;
-      line-height: 1.82;
-      color: var(--text-secondary);
-      margin-bottom: 28px;
-      text-align: justify;
-    }
-    .about-body p:last-of-type { margin-bottom: 0; }
-
-    /* Right column: pillar cards */
-    .pillars {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 14px;
-    }
-    .pillar {
-      display: grid;
-      grid-template-columns: 48px 1fr;
-      gap: 20px;
-      align-items: start;
-      padding: 26px 28px;
-      background: var(--surface-0);
-      border: 1px solid var(--border-light);
-      border-radius: var(--radius-md);
-      transition: all var(--duration-base) var(--ease-out);
-      position: relative;
-      overflow: hidden;
-    }
-    .pillar::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, var(--gold-pale) 0%, transparent 70%);
-      opacity: 0;
-      transition: opacity var(--duration-slow) var(--ease-out);
-    }
-    .pillar:hover {
-      border-color: var(--gold-border);
-      box-shadow: var(--shadow-sm);
-      transform: translateX(6px);
-    }
-    .pillar:hover::before { opacity: 1; }
-    .pillar-icon-wrap {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, var(--navy-light), var(--navy-mid));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      position: relative;
-      z-index: 1;
-    }
-    .pillar-icon-wrap svg {
-      width: 22px;
-      height: 22px;
-      color: var(--gold);
-    }
-    .pillar-body { position: relative; z-index: 1; }
-    .pillar-title {
-      font-family: var(--font-head);
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: 6px;
-      line-height: 1.3;
-    }
-    .pillar-text {
-      font-size: 0.84rem;
-      color: var(--text-secondary);
-      line-height: 1.65;
-      text-align: justify;
-    }
-
-    /* ─── Section: Experience ────────────────────────────────────────── */
-    #experience {
-      padding: 120px 0;
-      background: var(--navy);
-      position: relative;
-      overflow: hidden;
-    }
-    .exp-bg {
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px);
-      background-size: 64px 64px;
-      pointer-events: none;
-      mask-image: radial-gradient(ellipse 100% 100% at 50% 0%, black 0%, transparent 80%);
-    }
-    .exp-bg-glow {
-      position: absolute;
-      width: 600px;
-      height: 600px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(201,168,76,0.06) 0%, transparent 70%);
-      top: -200px;
-      right: -100px;
-      pointer-events: none;
-    }
-
-    .exp-cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-    .exp-card {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.07);
-      border-radius: var(--radius-lg);
-      padding: 36px 32px;
-      position: relative;
-      overflow: hidden;
-      transition: all var(--duration-slow) var(--ease-out);
-      display: flex;
-      flex-direction: column;
-    }
-    .exp-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.5), transparent);
-      opacity: 0;
-      transition: opacity var(--duration-slow) var(--ease-out);
-    }
-    .exp-card::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(201,168,76,0.04) 0%, transparent 60%);
-      opacity: 0;
-      transition: opacity var(--duration-slow) var(--ease-out);
-    }
-    .exp-card:hover {
-      border-color: rgba(201,168,76,0.22);
-      transform: translateY(-8px);
-      box-shadow: 0 32px 64px rgba(7,17,31,0.5), 0 4px 16px rgba(201,168,76,0.1);
-    }
-    .exp-card:hover::before,
-    .exp-card:hover::after { opacity: 1; }
-
-    .exp-period-badge {
-      display: inline-flex;
-      align-self: flex-start;
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--gold);
-      background: rgba(201,168,76,0.10);
-      border: 1px solid rgba(201,168,76,0.2);
-      border-radius: 100px;
-      padding: 4px 12px;
-      margin-bottom: 20px;
-      position: relative;
-      z-index: 1;
-    }
-    .exp-role {
-      font-family: var(--font-head);
-      font-size: 1.175rem;
-      font-weight: 700;
-      color: var(--white);
-      line-height: 1.3;
-      margin-bottom: 6px;
-      position: relative;
-      z-index: 1;
-    }
-    .exp-org {
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: rgba(255,255,255,0.38);
-      margin-bottom: 24px;
-      letter-spacing: 0.03em;
-      position: relative;
-      z-index: 1;
-    }
-    /* thin gold rule */
-    .exp-divider {
-      width: 32px;
-      height: 1px;
-      background: var(--gold);
-      margin-bottom: 24px;
-      opacity: 0.5;
-      position: relative;
-      z-index: 1;
-    }
-    .exp-bullets {
-      display: flex;
-      flex-direction: column;
-      gap: 11px;
-      margin-top: auto;
-      position: relative;
-      z-index: 1;
-    }
-    .exp-bullets li {
-      font-size: 0.84rem;
-      color: rgba(255,255,255,0.58);
-      line-height: 1.65;
-      padding-left: 16px;
-      position: relative;
-      transition: color var(--duration-base) var(--ease-out);
-    }
-    .exp-bullets li::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0.6em;
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background: var(--gold);
-      opacity: 0.6;
-    }
-    .exp-card:hover .exp-bullets li { color: rgba(255,255,255,0.72); }
-    .exp-card:hover .exp-bullets li::before { opacity: 1; }
-
-    /* ─── Section: Education ─────────────────────────────────────────── */
-    #education {
-      padding: 120px 0;
-      background: var(--white);
-    }
-    .edu-layout {
-      display: grid;
-      grid-template-columns: 280px 1fr;
-      gap: 80px;
-      align-items: start;
-    }
-    .edu-sidebar {
-      position: sticky;
-      top: calc(var(--nav-h) + 32px);
-    }
-    .edu-sidebar-title {
-      font-family: var(--font-head);
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--text-primary);
-      line-height: 1.3;
-      margin-bottom: 20px;
-      letter-spacing: -0.02em;
-    }
-    .edu-sidebar-body {
-      font-size: 0.875rem;
-      color: var(--text-secondary);
-      line-height: 1.75;
-      text-align: justify;
-    }
-
-    .timeline {
-      position: relative;
-    }
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 10px;
-      top: 10px;
-      bottom: 10px;
-      width: 1px;
-      background: linear-gradient(to bottom,
-        var(--gold) 0%,
-        rgba(201,168,76,0.4) 60%,
-        rgba(201,168,76,0.08) 100%);
-    }
-    .timeline-item {
-      display: grid;
-      grid-template-columns: 44px 1fr;
-      gap: 24px;
-      margin-bottom: 32px;
-      position: relative;
-    }
-    .timeline-item:last-child { margin-bottom: 0; }
-    .timeline-node {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 2px;
-    }
-    .timeline-dot {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: var(--white);
-      border: 2px solid var(--gold);
-      flex-shrink: 0;
-      position: relative;
-      z-index: 1;
-      transition: all var(--duration-base) var(--ease-out);
-    }
-    .timeline-item:hover .timeline-dot {
-      background: var(--gold);
-      box-shadow: 0 0 0 5px rgba(201,168,76,0.15);
-    }
-    .timeline-card {
-      background: var(--surface-0);
-      border: 1px solid var(--border-light);
-      border-radius: var(--radius-md);
-      padding: 26px 28px;
-      transition: all var(--duration-base) var(--ease-out);
-    }
-    .timeline-item:hover .timeline-card {
-      border-color: var(--gold-border);
-      box-shadow: var(--shadow-md);
-      transform: translateX(4px);
-    }
-    .timeline-year {
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 8px;
-    }
-    .timeline-degree {
-      font-family: var(--font-head);
-      font-size: 1.0625rem;
-      font-weight: 700;
-      color: var(--text-primary);
-      line-height: 1.3;
-      margin-bottom: 5px;
-    }
-    .timeline-school {
-      font-size: 0.825rem;
-      color: var(--text-tertiary);
-      margin-bottom: 16px;
-      text-align: justify;
-    }
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-    .badge {
-      font-size: 0.695rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      padding: 4px 11px;
-      border-radius: 100px;
-      transition: all var(--duration-base) var(--ease-out);
-    }
-    .badge-outline {
-      color: var(--text-secondary);
-      background: var(--white);
-      border: 1px solid var(--border-light);
-    }
-    .badge-gold {
-      color: var(--navy);
-      background: rgba(201,168,76,0.12);
-      border: 1px solid rgba(201,168,76,0.28);
-    }
-    .badge-navy {
-      color: var(--white);
-      background: var(--navy-mid);
-      border: 1px solid var(--navy-mid);
-    }
-
-    /* ─── Section: Projects ──────────────────────────────────────────── */
-    #projects {
-      padding: 120px 0;
-      background: var(--navy);
-      position: relative;
-      overflow: hidden;
-    }
-    .proj-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 20px;
-      position: relative;
-      z-index: 1;
-    }
-    .proj-tag {
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.03em;
-      color: rgba(255,255,255,0.65);
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 100px;
-      padding: 4px 11px;
-    }
-    .proj-desc {
-      font-size: 0.84rem;
-      color: rgba(255,255,255,0.58);
-      line-height: 1.65;
-      margin-bottom: 20px;
-      position: relative;
-      z-index: 1;
-      transition: color var(--duration-base) var(--ease-out);
-    }
-    .proj-tags { margin-top: auto; }
-    .exp-card:hover .proj-desc { color: rgba(255,255,255,0.72); }
-    .proj-link {
-      margin-top: 20px;
-      align-self: flex-start;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: var(--gold-bright);
-      border: 1px solid rgba(201,168,76,0.3);
-      border-radius: var(--radius-sm);
-      padding: 9px 16px;
-      transition: all var(--duration-base) var(--ease-out);
-      position: relative;
-      z-index: 1;
-    }
-    .proj-link:hover {
-      background: rgba(201,168,76,0.12);
-      border-color: rgba(201,168,76,0.5);
-      transform: translateY(-2px);
-    }
-    .proj-link svg { width: 14px; height: 14px; flex-shrink: 0; }
-
-    /* ─── Section: Skills ────────────────────────────────────────────── */
-    #skills {
-      padding: 120px 0;
-      background: var(--surface-1);
-      position: relative;
-    }
-    #skills::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 1px;
-      background: var(--border-light);
-    }
-    #skills::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 1px;
-      background: var(--border-light);
-    }
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-    .skill-group {
-      background: var(--white);
-      border: 1px solid var(--border-light);
-      border-radius: var(--radius-md);
-      padding: 28px 26px;
-      transition: all var(--duration-base) var(--ease-out);
-      position: relative;
-      overflow: hidden;
-    }
-    .skill-group::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 2px;
-      background: linear-gradient(90deg, var(--gold), var(--gold-bright));
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform var(--duration-slow) var(--ease-out);
-    }
-    .skill-group:hover {
-      border-color: var(--gold-border);
-      box-shadow: var(--shadow-md);
-      transform: translateY(-4px);
-    }
-    .skill-group:hover::before { transform: scaleX(1); }
-    .skill-group-header {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 20px;
-    }
-    .skill-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 10px;
-      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    .skill-icon svg {
-      width: 19px;
-      height: 19px;
-      color: var(--gold);
-    }
-    .skill-group-name {
-      font-family: var(--font-head);
-      font-size: 0.9375rem;
-      font-weight: 700;
-      color: var(--text-primary);
-      line-height: 1.3;
-    }
-    .skill-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-    }
-    .skill-chip {
-      font-size: 0.735rem;
-      font-weight: 500;
-      color: var(--text-secondary);
-      background: var(--surface-1);
-      border: 1px solid var(--border-light);
-      border-radius: 6px;
-      padding: 5px 12px;
-      transition: all var(--duration-base) var(--ease-out);
-      cursor: default;
-    }
-    .skill-chip:hover {
-      background: rgba(201,168,76,0.07);
-      border-color: rgba(201,168,76,0.3);
-      color: var(--text-primary);
-    }
-
-    /* ─── Section: Contact ───────────────────────────────────────────── */
-    #contact {
-      padding: 120px 0;
-      background: var(--navy-mid);
-      position: relative;
-      overflow: hidden;
-    }
-    .contact-bg {
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-    }
-    .contact-bg-radial {
-      position: absolute;
-      width: 800px;
-      height: 800px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: radial-gradient(circle, rgba(201,168,76,0.06) 0%, transparent 65%);
-    }
-    .contact-bg-grid {
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
-      background-size: 64px 64px;
-    }
-
-    .contact-layout {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: start;
-      position: relative;
-      z-index: 1;
-    }
-    .contact-headline {
-      font-family: var(--font-head);
-      font-size: clamp(1.5rem, 3vw, 2rem);
-      font-weight: 400;
-      font-style: italic;
-      color: rgba(255,255,255,0.75);
-      line-height: 1.55;
-      text-align: justify;
-      margin-bottom: 40px;
-    }
-    .contact-headline strong {
-      color: var(--gold);
-      font-style: normal;
-      font-weight: 700;
-    }
-    .avail-card {
-      background: rgba(201,168,76,0.07);
-      border: 1px solid rgba(201,168,76,0.2);
-      border-radius: var(--radius-md);
-      padding: 24px 26px;
-    }
-    .avail-status {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 10px;
-    }
-    .avail-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #4ADE80;
-      animation: pulse-green 2.4s ease-in-out infinite;
-      flex-shrink: 0;
-    }
-    .avail-body {
-      font-size: 0.875rem;
-      color: rgba(255,255,255,0.6);
-      line-height: 1.7;
-      text-align: justify;
-    }
-    .avail-body strong { color: rgba(255,255,255,0.85); font-weight: 600; }
-
-    .contact-right {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      padding: 20px 24px;
-      background: rgba(255,255,255,0.035);
-      border: 1px solid rgba(255,255,255,0.07);
-      border-radius: var(--radius-md);
-      transition: all var(--duration-base) var(--ease-out);
-    }
-    .contact-item:hover {
-      background: rgba(201,168,76,0.08);
-      border-color: rgba(201,168,76,0.22);
-      transform: translateX(6px);
-    }
-    .contact-icon {
-      width: 44px;
-      height: 44px;
-      background: rgba(201,168,76,0.1);
-      border: 1px solid rgba(201,168,76,0.18);
-      border-radius: 11px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      transition: background var(--duration-base) var(--ease-out);
-    }
-    .contact-item:hover .contact-icon {
-      background: rgba(201,168,76,0.18);
-    }
-    .contact-icon svg {
-      width: 18px;
-      height: 18px;
-      color: var(--gold);
-    }
-    .contact-label {
-      font-size: 0.67rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.35);
-      margin-bottom: 3px;
-    }
-    .contact-value {
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: rgba(255,255,255,0.85);
-      transition: color var(--duration-base) var(--ease-out);
-    }
-    .contact-item:hover .contact-value { color: var(--white); }
-
-    /* ─── Footer ─────────────────────────────────────────────────────── */
-    footer {
-      background: var(--navy);
-      border-top: 1px solid rgba(255,255,255,0.05);
-      padding: 36px var(--gutter);
-    }
-    .footer-inner {
-      max-width: var(--container);
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-    .footer-brand {
-      font-family: var(--font-head);
-      font-size: 1rem;
-      font-weight: 700;
-      color: rgba(255,255,255,0.4);
-    }
-    .footer-brand span { color: var(--gold); opacity: 0.8; }
-    .footer-note {
-      font-size: 0.75rem;
-      color: rgba(255,255,255,0.22);
-      letter-spacing: 0.04em;
-    }
-    .footer-links {
-      display: flex;
-      gap: 20px;
-    }
-    .footer-links a {
-      font-size: 0.75rem;
-      color: rgba(255,255,255,0.3);
-      transition: color var(--duration-base) var(--ease-out);
-    }
-    .footer-links a:hover { color: var(--gold); }
-
-    /* ─── Keyframes ──────────────────────────────────────────────────── */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes scroll-bob {
-      0%, 100% { transform: translateX(-50%) translateY(0);   opacity: 0.8; }
-      50%       { transform: translateX(-50%) translateY(9px); opacity: 0.25; }
-    }
-    @keyframes pulse-dot {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50%       { opacity: 0.55; transform: scale(0.75); }
-    }
-    @keyframes pulse-green {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(74,222,128,0.45); }
-      60%       { box-shadow: 0 0 0 7px rgba(74,222,128,0); }
-    }
-
-    /* ─── Responsive ─────────────────────────────────────────────────── */
-    @media (max-width: 1100px) {
-      .exp-cards {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .exp-cards .exp-card:last-child {
-        grid-column: 1 / -1;
-        max-width: 600px;
-        margin: 0 auto;
-        width: 100%;
-      }
-    }
-    @media (max-width: 960px) {
-      :root { --gutter: 24px; }
-      .about-layout { grid-template-columns: 1fr; gap: 56px; }
-      .edu-layout   { grid-template-columns: 1fr; gap: 48px; }
-      .edu-sidebar  { position: static; }
-      .contact-layout { grid-template-columns: 1fr; gap: 52px; }
-      .skills-grid  { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 768px) {
-      :root { --nav-h: 60px; }
-      .nav-links    { display: none; }
-      .nav-hamburger { display: flex; }
-      .exp-cards    { grid-template-columns: 1fr; }
-      .exp-cards .exp-card:last-child { grid-column: auto; max-width: none; }
-      .skills-grid  { grid-template-columns: 1fr; }
-      #about, #experience, #education, #skills, #contact { padding: 80px 0; }
-      .section-title { margin-bottom: 40px; }
-    }
-    @media (max-width: 560px) {
-      :root { --gutter: 18px; }
-      .hero-actions    { flex-direction: column; }
-      .hero-actions .btn { justify-content: center; }
-      .footer-inner    { flex-direction: column; align-items: flex-start; gap: 12px; }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500&family=IBM+Plex+Sans+Hebrew:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Matan Shneor", "alternateName": "מתן שניאור", "jobTitle": "Data & Business Analyst", "url": "https://matanshneor.github.io/Matan-Website/", "image": "https://matanshneor.github.io/Matan-Website/images/profile.jpg", "email": "mailto:matanshneor1@gmail.com", "telephone": "+972542165560", "alumniOf": {"@type": "CollegeOrUniversity", "name": "Hebrew University of Jerusalem"}, "knowsAbout": ["Data analysis", "SQL", "Python", "Business analysis", "Financial modeling", "AI automation"], "sameAs": ["https://www.linkedin.com/in/matan-shneor-5830583a1/", "https://github.com/matanshneor"]}</script>
 </head>
 <body>
-
-  <!-- ─── Navigation ──────────────────────────────────────────────────── -->
-  <nav id="site-nav" aria-label="Main navigation">
-    <div class="nav-inner">
-      <a href="#hero" class="nav-logo" aria-label="Matan Shneor — home">
-        Matan<span class="dot" aria-hidden="true"></span>Shneor
-      </a>
-      <ul class="nav-links" role="list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact" class="nav-cta">Contact</a></li>
+<a class="skip-link" href="#main"><span data-lang="en">Skip to content</span><span data-lang="he" lang="he">דילוג לתוכן</span></a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 19h16"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="M3 6l9 7 9-7"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.9.7 2.8a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.9.6 2.8.7a2 2 0 011.8 2z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 01-2.4-1.5 9 9 0 01-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5a.5.5 0 000-.5L9 6.8c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 00-.8.4A3.4 3.4 0 006 9.2a5.9 5.9 0 001.2 3.1 13.4 13.4 0 005.2 4.6c.7.3 1.3.5 1.7.6a4.2 4.2 0 001.9.1 3.1 3.1 0 002-1.4 2.5 2.5 0 00.2-1.4c-.1-.2-.3-.3-.7-.4zM12 21.8a9.9 9.9 0 01-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.9 9.9 0 1112 21.8zm8.4-18.3A11.8 11.8 0 001.7 17.7L0 24l6.4-1.7A11.8 11.8 0 0012 23.8 11.8 11.8 0 0020.4 3.5z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.6 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></symbol>
+  <symbol id="i-bank" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6M5 10v9M10 10v9M14 10v9M19 10v9M3 21h18"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.9M16 3.1a4 4 0 010 7.8"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></symbol>
+  <symbol id="i-site" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 9h20M6 6.5h.01M9 6.5h.01"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></symbol>
+</svg>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand" aria-label="Matan Shneor" data-aria-en="Matan Shneor" data-aria-he="מתן שניאור">
+      <span class="brand-mark" aria-hidden="true">MS</span>
+      <span class="brand-name"><span data-lang="en">Matan Shneor</span><span data-lang="he" lang="he">מתן שניאור</span></span>
+    </a>
+    <nav class="nav-main" aria-label="Main" data-aria-en="Main" data-aria-he="ראשי">
+      <ul class="nav-links">
+        <li><a href="#work"><span data-lang="en">Work</span><span data-lang="he" lang="he">עבודות</span></a></li>
+        <li><a href="#services"><span data-lang="en">Services</span><span data-lang="he" lang="he">שירותים</span></a></li>
+        <li><a href="#about"><span data-lang="en">About</span><span data-lang="he" lang="he">אודות</span></a></li>
+        <li><a href="#experience"><span data-lang="en">Experience</span><span data-lang="he" lang="he">ניסיון</span></a></li>
+        <li><a href="#contact"><span data-lang="en">Contact</span><span data-lang="he" lang="he">צור קשר</span></a></li>
       </ul>
-      <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-drawer">
-        <span></span><span></span><span></span>
+    </nav>
+    <div class="nav-actions">
+      <button class="lang-toggle" type="button" aria-label="החלפה לעברית" lang="he">
+        <span class="opt-en" aria-hidden="true">EN</span><span class="opt-he" aria-hidden="true">עב</span>
       </button>
+      <a class="btn btn-gold nav-cta" href="https://wa.me/972542165560" data-wa target="_blank" rel="noopener"><svg aria-hidden="true" focusable="false"><use href="#i-wa"/></svg>WhatsApp</a>
+      <button class="nav-burger" type="button" aria-expanded="false" aria-controls="drawer" data-aria-en="Open menu" data-aria-he="פתיחת תפריט" aria-label="Open menu"><span></span></button>
     </div>
-  </nav>
-
-  <!-- Mobile drawer -->
-  <nav class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation">
-    <a href="#about"      onclick="closeDrawer()">About</a>
-    <a href="#experience" onclick="closeDrawer()">Experience</a>
-    <a href="#education"  onclick="closeDrawer()">Education</a>
-    <a href="#projects"   onclick="closeDrawer()">Projects</a>
-    <a href="#skills"     onclick="closeDrawer()">Skills</a>
-    <a href="#contact"    onclick="closeDrawer()" class="drawer-cta">Contact</a>
-  </nav>
-
-  <!-- ─── Hero ─────────────────────────────────────────────────────────── -->
-  <header id="hero">
-    <div class="hero-bg" aria-hidden="true">
-      <div class="hero-bg-gradient"></div>
-      <div class="hero-bg-grid"></div>
-      <div class="hero-bg-monogram">MS</div>
-    </div>
-
-    <div class="container">
-      <div class="hero-content">
-
-        <div class="hero-kicker" aria-label="Current status">
-          <span class="hero-kicker-dot" aria-hidden="true"></span>
-          <span class="hero-kicker-text">MBA &mdash; Hebrew University of Jerusalem</span>
-        </div>
-
-        <h1 class="hero-name">
-          <span class="hero-name-first">Matan</span>
-          <span class="hero-name-last">Shneor</span>
-        </h1>
-
-        <div class="hero-meta">
-          <a href="https://www.linkedin.com/in/matan-shneor-5830583a1/" target="_blank" rel="noopener" class="hero-meta-item" aria-label="LinkedIn profile">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" aria-hidden="true">
-              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zm2-3a2 2 0 100-4 2 2 0 000 4z"/>
-            </svg>
-            linkedin.com/in/matan-shneor
-          </a>
-          <a href="https://github.com/matanshneor" target="_blank" rel="noopener" class="hero-meta-item" aria-label="GitHub profile">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" aria-hidden="true">
-              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-            </svg>
-            github.com/matanshneor
-          </a>
-          <a href="tel:054-216-5560" class="hero-meta-item" aria-label="Phone number">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15" aria-hidden="true">
-              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.22 1.18a2 2 0 012-2.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 5.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 12.92v4z"/>
-            </svg>
-            054-216-5560
-          </a>
-          <a href="mailto:matanshneor1@gmail.com" class="hero-meta-item" aria-label="Email address">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15" aria-hidden="true">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
-            matanshneor1@gmail.com
-          </a>
-        </div>
-
+  </div>
+</header>
+<nav class="drawer" id="drawer" aria-label="Mobile" data-aria-en="Mobile" data-aria-he="תפריט נייד">
+    <a href="#work"><span data-lang="en">Work</span><span data-lang="he" lang="he">עבודות</span></a>
+    <a href="#services"><span data-lang="en">Services</span><span data-lang="he" lang="he">שירותים</span></a>
+    <a href="#about"><span data-lang="en">About</span><span data-lang="he" lang="he">אודות</span></a>
+    <a href="#experience"><span data-lang="en">Experience</span><span data-lang="he" lang="he">ניסיון</span></a>
+    <a href="#contact"><span data-lang="en">Contact</span><span data-lang="he" lang="he">צור קשר</span></a>
+    <a class="btn btn-gold" href="https://wa.me/972542165560" data-wa target="_blank" rel="noopener"><svg aria-hidden="true" focusable="false"><use href="#i-wa"/></svg><span data-lang="en">Message me on WhatsApp</span><span data-lang="he" lang="he">שלחו לי הודעה בוואטסאפ</span></a>
+</nav>
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-name">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-enter">
+        <div class="hero-status"><span class="status-dot" aria-hidden="true"></span><span data-lang="en">Open to data &amp; business analyst roles</span><span data-lang="he" lang="he">פתוח להצעות לתפקידי Data / Business Analyst</span></div>
+        <h1 class="hero-name" id="hero-name"><span data-lang="en">Matan</span><span data-lang="he" lang="he">מתן</span><span class="visually-hidden"> </span><span class="last"><span data-lang="en">Shneor</span><span data-lang="he" lang="he">שניאור</span></span></h1>
+        <p class="hero-role"><span data-lang="en">Data &amp; Business Analyst · MBA</span><span data-lang="he" lang="he">אנליסט נתונים ועסקים · MBA</span></p>
+        <p data-lang="en" class="hero-lede">I turn business data into decisions, and build the tools that put them to work. Three years with <strong>full P&amp;L ownership</strong> of a business, an MBA in Big Data &amp; Analytics, and AI-powered systems <strong>in production</strong> at a real-estate office.</p><p data-lang="he" class="hero-lede" lang="he">אני הופך נתונים עסקיים להחלטות, ובונה את הכלים שמיישמים אותן. <strong>3 שנים של ניהול ובעלות עסק</strong>, MBA בביג דאטה ואנליטיקה, ומערכות מבוססות AI <strong>שעובדות בשטח</strong> במשרד נדל״ן.</p>
         <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
-            Get In Touch
-          </a>
-          <a href="https://www.linkedin.com/in/matan-shneor-5830583a1/" target="_blank" rel="noopener" class="btn btn-ghost">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zm2-3a2 2 0 100-4 2 2 0 000 4z"/>
-            </svg>
-            LinkedIn Profile
-          </a>
+          <a class="btn btn-gold" href="#work"><span data-lang="en">See my work</span><span data-lang="he" lang="he">לצפייה בעבודות</span><svg class="arrow" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ghost" href="assets/Matan-Shneor-CV.pdf" download><span data-lang="en">Download CV</span><span data-lang="he" lang="he">הורדת קורות חיים</span></a>
         </div>
-
+        <p class="hero-aside"><span data-lang="en">Need a system or website for your business?</span><span data-lang="he" lang="he">צריכים מערכת או אתר לעסק?</span> <a href="#services"><span data-lang="en">See services</span><span data-lang="he" lang="he">לשירותים</span><svg class="arrow" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></p>
+      </div>
+      <div class="hero-photo">
+        <div class="hero-photo-frame">
+          <img src="images/profile.webp" width="800" height="1200" fetchpriority="high" alt="Portrait of Matan Shneor" data-alt-en="Portrait of Matan Shneor" data-alt-he="תמונה של מתן שניאור" />
+        </div>
+        <div class="hero-photo-tag"><b><span data-lang="en">MBA, Hebrew University</span><span data-lang="he" lang="he">MBA, האוניברסיטה העברית</span></b><span data-lang="en">Big Data &amp; Analytics · Finance</span><span data-lang="he" lang="he">ביג דאטה ואנליטיקה · מימון</span></div>
       </div>
     </div>
+  </div>
 
-    <div class="scroll-hint" aria-hidden="true">
-      <span class="scroll-hint-label">Scroll</span>
-      <div class="scroll-mouse"></div>
+  <div class="container career" role="group" aria-label="Career trajectory, 2020 to 2026" data-aria-en="Career trajectory, 2020 to 2026" data-aria-he="מסלול קריירה, 2020 עד 2026">
+    <div class="career-label" aria-hidden="true"><span><span data-lang="en">Career trajectory</span><span data-lang="he" lang="he">מסלול קריירה</span></span><span dir="ltr">2020 → 2026</span></div>
+    <div class="career-plot">
+      <svg viewBox="0 0 1000 220" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="careerFill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#C9A84C" stop-opacity="0.22"/>
+            <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <g class="career-grid">
+          <line x1="0" y1="55" x2="1000" y2="55" vector-effect="non-scaling-stroke"/>
+          <line x1="0" y1="110" x2="1000" y2="110" vector-effect="non-scaling-stroke"/>
+          <line x1="0" y1="165" x2="1000" y2="165" vector-effect="non-scaling-stroke"/>
+        </g>
+        <path class="career-area" d="M0,150 C30,146 45,138 60,136 S200,122 260,119 S440,98 500,88 S650,74 700,70 S850,46 900,35 S975,24 1000,22 L1000,220 L0,220 Z"/>
+        <path class="career-line" pathLength="1" vector-effect="non-scaling-stroke" d="M0,150 C30,146 45,138 60,136 S200,122 260,119 S440,98 500,88 S650,74 700,70 S850,46 900,35 S975,24 1000,22"/>
+      </svg>
+      <ol class="milestones">
+        <li><div class="milestone down start" style="left:6%;--y:62%"><span class="ms-year">2020</span><span class="ms-text"><span data-lang="en">Ministry of Education <span class="opt">· project coordinator</span></span><span data-lang="he" lang="he">משרד החינוך <span class="opt">· רכז פרויקטים</span></span></span></div></li>
+        <li><div class="milestone up" style="left:26%;--y:54%"><span class="ms-year">2021</span><span class="ms-text"><span data-lang="en">B.A. <span class="opt">Business &amp; Criminology</span></span><span data-lang="he" lang="he">תואר ראשון <span class="opt">מנהל עסקים וקרימינולוגיה</span></span></span></div></li>
+        <li><div class="milestone down" style="left:50%;--y:40%"><span class="ms-year">2023</span><span class="ms-text"><span data-lang="en">Co-owner &amp; GM · <b>full P&amp;L</b></span><span data-lang="he" lang="he">שותף ומנכ״ל · <b>P&amp;L מלא</b></span></span></div></li>
+        <li><div class="milestone up" style="left:70%;--y:32%"><span class="ms-year">2024</span><span class="ms-text"><span data-lang="en">MBA <span class="opt">· Big Data &amp; Analytics</span></span><span data-lang="he" lang="he">MBA <span class="opt">· ביג דאטה ואנליטיקה</span></span></span></div></li>
+        <li><div class="milestone down now end" style="left:90%;--y:16%"><span class="ms-year">2026</span><span class="ms-text"><span data-lang="en">AI systems <b>in production</b></span><span data-lang="he" lang="he">מערכות AI <b>בפרודקשן</b></span></span></div></li>
+      </ol>
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- ─── About ─────────────────────────────────────────────────────────── -->
-  <section id="about" aria-labelledby="about-heading">
-    <div class="container">
-      <span class="section-eyebrow" aria-hidden="true">Professional Profile</span>
-      <h2 id="about-heading" class="section-title">Driven by <em>Data</em>,<br>Defined by Results</h2>
+<section class="proof" aria-label="Key numbers" data-aria-en="Key numbers" data-aria-he="מספרים מרכזיים">
+  <div class="container">
+    <dl class="proof-grid">
+      <div class="proof-item reveal">
+        <dt class="visually-hidden"><span data-lang="en">Years</span><span data-lang="he" lang="he">שנים</span></dt>
+        <dd><span class="proof-num"><span data-count="3">3</span></span>
+        <p data-lang="en" class="proof-label">years of full P&amp;L ownership of a business</p><p data-lang="he" class="proof-label" lang="he">שנים של ניהול ובעלות עסק</p></dd>
+      </div>
+      <div class="proof-item reveal" style="--d:80ms">
+        <dt class="visually-hidden"><span data-lang="en">Team</span><span data-lang="he" lang="he">צוות</span></dt>
+        <dd><span class="proof-num"><span data-count="15">15</span></span>
+        <p data-lang="en" class="proof-label">employees recruited, trained and led</p><p data-lang="he" class="proof-label" lang="he">עובדים שגייסתי, הכשרתי וניהלתי</p></dd>
+      </div>
+      <div class="proof-item reveal" style="--d:160ms">
+        <dt class="visually-hidden"><span data-lang="en">Users</span><span data-lang="he" lang="he">משתמשים</span></dt>
+        <dd><span class="proof-num"><span data-count="10">10</span></span>
+        <p data-lang="en" class="proof-label">real-estate agents working with systems I built</p><p data-lang="he" class="proof-label" lang="he">סוכני נדל״ן עובדים עם מערכות שבניתי</p></dd>
+      </div>
+      <div class="proof-item reveal" style="--d:240ms">
+        <dt class="visually-hidden"><span data-lang="en">GPA</span><span data-lang="he" lang="he">ממוצע</span></dt>
+        <dd><span class="proof-num"><span data-count="87">87</span></span>
+        <p data-lang="en" class="proof-label">MBA GPA out of 100, Hebrew University of Jerusalem</p><p data-lang="he" class="proof-label" lang="he">ממוצע בתואר השני (מתוך 100), האוניברסיטה העברית</p></dd>
+      </div>
+    </dl>
+  </div>
+</section>
 
-      <div class="about-layout">
-
-        <div class="about-body">
-          <div class="about-photo-wrap">
-            <div class="about-photo-frame">
-              <img src="images/profile.jpg" alt="Matan Shneor" class="about-photo" />
-            </div>
-          </div>
-          <p>
-            I am an MBA graduate of the Hebrew University of Jerusalem, with dual specializations
-            in Analytics &amp; Big Data and Finance &mdash; completed with a GPA of 87.
-            My academic rigor is matched by real-world experience: three years of
-            P&amp;L ownership of a business generating &#8362;8M in annual revenue, alongside academic work in
-            predictive modeling and data analysis.
-          </p>
-          <p>
-            I complemented a 250-hour AI Developer course at The Hi-Tech Academy of the Hebrew University
-            &mdash; Python, SQL, prompt engineering, and AI agents &mdash;
-            building independent automation and data projects with AI-assisted development tools such as
-            Cursor and Claude Code.
-          </p>
-          <p>
-            Proficient in data manipulation using Python (Pandas/NumPy), SQL, and Excel, I am
-            seeking a challenging Data Analyst or Business Intelligence role where I can drive
-            data-informed decision making from day one.
-          </p>
-        </div>
-
-        <div class="pillars">
-          <div class="pillar">
-            <div class="pillar-icon-wrap" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M18 20V10M12 20V4M6 20v-6"/>
-              </svg>
-            </div>
-            <div class="pillar-body">
-              <h3 class="pillar-title">Analytics &amp; Big Data</h3>
-              <p class="pillar-text">Applying quantitative methods, predictive modeling, and churn analysis to solve complex business problems and uncover actionable insights.</p>
-            </div>
-          </div>
-
-          <div class="pillar">
-            <div class="pillar-icon-wrap" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M2 9l10-6 10 6"/>
-                <path d="M5 21V10M10 21V10M14 21V10M19 21V10"/>
-                <path d="M2 21h20"/>
-              </svg>
-            </div>
-            <div class="pillar-body">
-              <h3 class="pillar-title">Finance &amp; Banking</h3>
-              <p class="pillar-text">Deep academic grounding in financial markets, pricing strategy, and cost structure optimization &mdash; applied in real business contexts.</p>
-            </div>
-          </div>
-
-          <div class="pillar">
-            <div class="pillar-icon-wrap" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <circle cx="12" cy="12" r="3"/>
-                <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
-              </svg>
-            </div>
-            <div class="pillar-body">
-              <h3 class="pillar-title">AI &amp; Python Development</h3>
-              <p class="pillar-text">Hands-on experience with Python (Pandas/NumPy) and SQL, building independent automation and data projects with AI-assisted tools like Cursor and Claude Code.</p>
-            </div>
-          </div>
-
-          <div class="pillar">
-            <div class="pillar-icon-wrap" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
-              </svg>
-            </div>
-            <div class="pillar-body">
-              <h3 class="pillar-title">Leadership &amp; Operations</h3>
-              <p class="pillar-text">Proven ability to recruit, train and manage teams under pressure, with full P&amp;L accountability for a &#8362;8M-revenue operation.</p>
-            </div>
-          </div>
-        </div>
-
+<section class="section section--paper2" id="work" aria-labelledby="work-title">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow"><span data-lang="en">Selected work</span><span data-lang="he" lang="he">תיק עבודות</span></span>
+        <h2 class="section-title" id="work-title"><span data-lang="en">Projects in <em>production</em></span><span data-lang="he" lang="he">פרויקטים <em>שעובדים בשטח</em></span></h2>
+      </div>
+      <div class="filters" role="group" aria-label="Filter projects" data-aria-en="Filter projects" data-aria-he="סינון פרויקטים">
+        <button class="filter" type="button" data-filter="all" aria-pressed="true"><span data-lang="en">All</span><span data-lang="he" lang="he">הכול</span></button>
+        <button class="filter" type="button" data-filter="apps" aria-pressed="false"><span data-lang="en">Systems &amp; apps</span><span data-lang="he" lang="he">מערכות ואפליקציות</span></button>
+        <button class="filter" type="button" data-filter="sites" aria-pressed="false"><span data-lang="en">Websites</span><span data-lang="he" lang="he">אתרים</span></button>
       </div>
     </div>
-  </section>
+    <p class="visually-hidden" role="status" id="work-status"></p>
+    <div class="work-grid">
+      <article class="work-card work-card--featured reveal" data-cat="apps" style="--d:0ms">
+        <div class="work-media work-media--gold"><div class="browser "><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span class="url">smartfin.up.railway.app</span></div><img src="images/projects/smartfin/landing.webp" width="1440" height="900" loading="lazy" decoding="async" alt="SmartFin landing page with a phone mockup of the monthly balance" data-alt-en="SmartFin landing page with a phone mockup of the monthly balance" data-alt-he="דף הבית של SmartFin עם הדמיית טלפון של מאזן החודש" /></div><div class="phone"><img src="images/projects/smartfin/mobile.webp" width="780" height="1688" loading="lazy" decoding="async" alt="SmartFin on a phone" data-alt-en="SmartFin on a phone" data-alt-he="SmartFin בטלפון" /></div></div>
+        <div class="work-body">
+          <div class="work-meta"><span class="cat"><span data-lang="en">Web &amp; AI app · 2026</span><span data-lang="he" lang="he">אפליקציית Web ו-AI · 2026</span></span><span class="badge-live"><span data-lang="en">Live</span><span data-lang="he" lang="he">באוויר</span></span></div>
+          <h3 class="work-title"><a href="projects/smartfin.html"><span data-lang="en">SmartFin — Household Finance</span><span data-lang="he" lang="he">SmartFin — ניהול תקציב משפחתי</span></a></h3>
+          <p data-lang="en" class="work-desc">Track a family budget together. Photograph a receipt and the OpenAI API extracts the amount, merchant and category; charts show where the money went.</p><p data-lang="he" class="work-desc" lang="he">ניהול תקציב משפחתי משותף. מצלמים קבלה וה-OpenAI API מחלץ סכום, בית עסק וקטגוריה; גרפים מראים לאן הלך הכסף.</p>
+          <p class="work-result"><b><span data-lang="en">Result</span><span data-lang="he" lang="he">תוצאה</span></b><span data-lang="en">Live in production, covered by 2,117 automated tests</span><span data-lang="he" lang="he">באוויר, עם 2,117 בדיקות אוטומטיות</span></p>
+          <div class="tags" role="group" aria-label="Tech stack" data-aria-en="Tech stack" data-aria-he="טכנולוגיות"><span class="tag">Python · Flask</span><span class="tag">Supabase</span><span class="tag">OpenAI API</span><span class="tag">Railway</span></div>
+          <span class="work-link" aria-hidden="true"><span data-lang="en">Read the case study</span><span data-lang="he" lang="he">לקריאת המקרה המלא</span><svg class="arrow" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></span>
+        </div>
+      </article>
+      <article class="work-card work-card--featured work-card--flip reveal" data-cat="apps" style="--d:0ms">
+        <div class="work-media work-media--slate"><div class="browser "><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span class="url">Office CRM · Sellers</span></div><img src="images/projects/remax-office/crm-properties.webp" width="1196" height="703" loading="lazy" decoding="async" alt="RE/MAX CRM — sellers screen with property cards (demo data)" data-alt-en="RE/MAX CRM — sellers screen with property cards (demo data)" data-alt-he="מערכת ה-CRM של רימקס — מסך המוכרים עם כרטיסי נכסים (נתוני דמו)" /></div></div>
+        <div class="work-body">
+          <div class="work-meta"><span class="cat"><span data-lang="en">Internal client system · 2026</span><span data-lang="he" lang="he">מערכת פנימית ללקוח · 2026</span></span></div>
+          <h3 class="work-title"><a href="projects/remax-office.html"><span data-lang="en">RE/MAX Office Systems</span><span data-lang="he" lang="he">מערכות למשרד RE/MAX</span></a></h3>
+          <p data-lang="en" class="work-desc">I mapped a real-estate office’s workflows with its manager, then built two systems on my own: a CRM for buyers, sellers, tasks and budget, and an ad generator for the agents.</p><p data-lang="he" class="work-desc" lang="he">מיפיתי עם מנהלת המשרד את תהליכי העבודה של משרד תיווך, ובניתי לבד שתי מערכות: CRM לקונים, מוכרים, משימות ותקציב, ומחולל מודעות לסוכנים.</p>
+          <p class="work-result"><b><span data-lang="en">Result</span><span data-lang="he" lang="he">תוצאה</span></b><span data-lang="en">In production, used by the office’s 10 agents</span><span data-lang="he" lang="he">בפרודקשן, בשימוש 10 סוכני המשרד</span></p>
+          <div class="tags" role="group" aria-label="Tech stack" data-aria-en="Tech stack" data-aria-he="טכנולוגיות"><span class="tag">Next.js</span><span class="tag">Supabase</span><span class="tag">Python</span><span class="tag">JavaScript</span></div>
+          <span class="work-link" aria-hidden="true"><span data-lang="en">Read the case study</span><span data-lang="he" lang="he">לקריאת המקרה המלא</span><svg class="arrow" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></span>
+        </div>
+      </article>
+      <article class="work-card reveal" data-cat="sites" style="--d:0ms">
+        <div class="work-media work-media--teal"><div class="browser "><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span class="url">mitogal.up.railway.app</span></div><img src="images/projects/mitogal/desktop.webp" width="1440" height="900" loading="lazy" decoding="async" alt="MitoGal website hero: event branding with a photo gallery" data-alt-en="MitoGal website hero: event branding with a photo gallery" data-alt-he="האתר של מיתוגל: מיתוג לאירועים עם גלריית תמונות" /></div><div class="phone"><img src="images/projects/mitogal/mobile.webp" width="780" height="1688" loading="lazy" decoding="async" alt="MitoGal on a phone" data-alt-en="MitoGal on a phone" data-alt-he="מיתוגל בטלפון" /></div></div>
+        <div class="work-body">
+          <div class="work-meta"><span class="cat"><span data-lang="en">Client website · 2026</span><span data-lang="he" lang="he">אתר ללקוח · 2026</span></span><span class="badge-live"><span data-lang="en">Live</span><span data-lang="he" lang="he">באוויר</span></span></div>
+          <h3 class="work-title"><a href="projects/mitogal.html"><span data-lang="en">MitoGal — Event Branding Studio</span><span data-lang="he" lang="he">מיתוגל — סטודיו למיתוג אירועים</span></a></h3>
+          <p data-lang="en" class="work-desc">A mobile-first Hebrew site for an event-branding business, built to turn visitors arriving from Instagram into WhatsApp inquiries within one scroll.</p><p data-lang="he" class="work-desc" lang="he">אתר בעברית, מותאם קודם כל לנייד, לעסק של מיתוג אירועים. המטרה: להפוך גולש שהגיע מאינסטגרם לפנייה בוואטסאפ תוך גלילה אחת.</p>
+          <p class="work-result"><b><span data-lang="en">Result</span><span data-lang="he" lang="he">תוצאה</span></b><span data-lang="en">Live, with a lead inbox for the owner</span><span data-lang="he" lang="he">באוויר, עם תיבת פניות לבעלת העסק</span></p>
+          <div class="tags" role="group" aria-label="Tech stack" data-aria-en="Tech stack" data-aria-he="טכנולוגיות"><span class="tag">Next.js</span><span class="tag">React</span><span class="tag">Tailwind</span><span class="tag">Postgres</span></div>
+          <span class="work-link" aria-hidden="true"><span data-lang="en">Read the case study</span><span data-lang="he" lang="he">לקריאת המקרה המלא</span><svg class="arrow" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></span>
+        </div>
+      </article>
+      <article class="work-card reveal" data-cat="sites" style="--d:80ms">
+        <div class="work-media work-media--slate"><div class="browser "><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span class="url">moshe-shneor.netlify.app</span></div><img src="images/projects/agent-website/desktop.webp" width="1440" height="900" loading="lazy" decoding="async" alt="Real-estate agent website with RE/MAX branding and contact actions" data-alt-en="Real-estate agent website with RE/MAX branding and contact actions" data-alt-he="אתר תדמית לסוכן נדל״ן עם מיתוג רימקס ופעולות יצירת קשר" /></div><div class="phone"><img src="images/projects/agent-website/mobile.webp" width="780" height="1688" loading="lazy" decoding="async" alt="Agent website on a phone" data-alt-en="Agent website on a phone" data-alt-he="אתר הסוכן בטלפון" /></div></div>
+        <div class="work-body">
+          <div class="work-meta"><span class="cat"><span data-lang="en">Client website · 2026</span><span data-lang="he" lang="he">אתר ללקוח · 2026</span></span><span class="badge-live"><span data-lang="en">Live</span><span data-lang="he" lang="he">באוויר</span></span></div>
+          <h3 class="work-title"><a href="projects/agent-website.html"><span data-lang="en">Real-Estate Agent Website</span><span data-lang="he" lang="he">אתר תדמית לסוכן נדל״ן</span></a></h3>
+          <p data-lang="en" class="work-desc">A digital business card for a RE/MAX franchise owner: one tap to call, WhatsApp, save the contact or navigate to the office.</p><p data-lang="he" class="work-desc" lang="he">כרטיס ביקור דיגיטלי לזכיין רימקס: לחיצה אחת להתקשר, לשלוח וואטסאפ, לשמור איש קשר או לנווט למשרד.</p>
+          <p class="work-result"><b><span data-lang="en">Result</span><span data-lang="he" lang="he">תוצאה</span></b><span data-lang="en">Every way to make contact is one tap away</span><span data-lang="he" lang="he">כל דרך ליצירת קשר במרחק לחיצה אחת</span></p>
+          <div class="tags" role="group" aria-label="Tech stack" data-aria-en="Tech stack" data-aria-he="טכנולוגיות"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Netlify</span></div>
+          <span class="work-link" aria-hidden="true"><span data-lang="en">Read the case study</span><span data-lang="he" lang="he">לקריאת המקרה המלא</span><svg class="arrow" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-  <!-- ─── Experience ────────────────────────────────────────────────────── -->
-  <section id="experience" aria-labelledby="exp-heading">
-    <div class="exp-bg" aria-hidden="true"></div>
-    <div class="exp-bg-glow" aria-hidden="true"></div>
-    <div class="container" style="position:relative;z-index:1;">
-      <span class="section-eyebrow on-dark" aria-hidden="true">Work History</span>
-      <h2 id="exp-heading" class="section-title on-dark">Professional <em>Experience</em></h2>
+<section class="section section--ink" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow"><span data-lang="en">For businesses</span><span data-lang="he" lang="he">לעסקים</span></span>
+        <h2 class="section-title" id="services-title"><span data-lang="en">What I can <em>build for you</em></span><span data-lang="he" lang="he">מה אני יכול <em>לבנות בשבילכם</em></span></h2>
+      </div>
+      <p data-lang="en" class="section-lede">I start from how your business actually runs, then build the smallest thing that saves your team real time.</p><p data-lang="he" class="section-lede" lang="he">אני מתחיל מאיך שהעסק שלכם באמת עובד, ובונה את הפתרון הפשוט ביותר שיחסוך לצוות זמן אמיתי.</p>
+    </div>
+    <div class="services-grid">
+      
+      <article class="service reveal" style="--d:0ms">
+        <div class="service-icon"><svg aria-hidden="true" focusable="false"><use href="#i-grid"/></svg></div>
+        <h3><span data-lang="en">Management systems &amp; CRM</span><span data-lang="he" lang="he">מערכות ניהול ו-CRM</span></h3>
+        <p data-lang="en">One place for clients, tasks and numbers, shaped around your workflow.</p><p data-lang="he" lang="he">מקום אחד ללקוחות, למשימות ולמספרים, שנבנה סביב שיטת העבודה שלכם.</p>
+        <ul><li><span data-lang="en">Workflow mapping with your team</span><span data-lang="he" lang="he">מיפוי תהליכים יחד עם הצוות</span></li><li><span data-lang="en">Permissions per user and role</span><span data-lang="he" lang="he">הרשאות לפי משתמש ותפקיד</span></li><li><span data-lang="en">Dashboards and team training</span><span data-lang="he" lang="he">דשבורדים והדרכת הצוות</span></li></ul>
+        <p class="service-proof"><span data-lang="en">Example: <a href="projects/remax-office.html">RE/MAX Office Systems</a></span><span data-lang="he" lang="he">לדוגמה: <a href="projects/remax-office.html">מערכות למשרד RE/MAX</a></span></p>
+      </article>
+      
+      <article class="service reveal" style="--d:80ms">
+        <div class="service-icon"><svg aria-hidden="true" focusable="false"><use href="#i-site"/></svg></div>
+        <h3><span data-lang="en">Business websites</span><span data-lang="he" lang="he">אתרי תדמית לעסקים</span></h3>
+        <p data-lang="en">Fast, mobile-first sites in Hebrew or English that turn visitors into inquiries.</p><p data-lang="he" lang="he">אתרים מהירים, מותאמים לנייד, בעברית או באנגלית, שהופכים גולשים לפניות.</p>
+        <ul><li><span data-lang="en">WhatsApp and lead capture</span><span data-lang="he" lang="he">וואטסאפ ואיסוף לידים</span></li><li><span data-lang="en">Hebrew RTL and bilingual</span><span data-lang="he" lang="he">עברית מימין לשמאל ודו-לשוניות</span></li><li><span data-lang="en">Hosting and domain setup</span><span data-lang="he" lang="he">אחסון וחיבור דומיין</span></li></ul>
+        <p class="service-proof"><span data-lang="en">Examples: <a href="projects/mitogal.html">MitoGal</a>, <a href="projects/agent-website.html">agent website</a></span><span data-lang="he" lang="he">לדוגמה: <a href="projects/mitogal.html">מיתוגל</a>, <a href="projects/agent-website.html">אתר לסוכן נדל״ן</a></span></p>
+      </article>
+      
+      <article class="service reveal" style="--d:160ms">
+        <div class="service-icon"><svg aria-hidden="true" focusable="false"><use href="#i-bolt"/></svg></div>
+        <h3><span data-lang="en">AI automation</span><span data-lang="he" lang="he">אוטומציות AI</span></h3>
+        <p data-lang="en">Hand the repetitive work to software: reading documents, sorting data, drafting content.</p><p data-lang="he" lang="he">להעביר לתוכנה את העבודה החוזרת: קריאת מסמכים, מיון נתונים וכתיבת תוכן.</p>
+        <ul><li><span data-lang="en">Data extraction with the OpenAI API</span><span data-lang="he" lang="he">חילוץ נתונים עם OpenAI API</span></li><li><span data-lang="en">n8n workflows and AI agents</span><span data-lang="he" lang="he">תהליכי n8n וסוכני AI</span></li><li><span data-lang="en">Email-to-system integrations</span><span data-lang="he" lang="he">חיבור מיילים ישירות למערכת</span></li></ul>
+        <p class="service-proof"><span data-lang="en">Example: <a href="projects/smartfin.html">SmartFin receipt scanning</a></span><span data-lang="he" lang="he">לדוגמה: <a href="projects/smartfin.html">סריקת קבלות ב-SmartFin</a></span></p>
+      </article>
+      
+      <article class="service reveal" style="--d:240ms">
+        <div class="service-icon"><svg aria-hidden="true" focusable="false"><use href="#i-chart"/></svg></div>
+        <h3><span data-lang="en">Data analysis &amp; dashboards</span><span data-lang="he" lang="he">ניתוח נתונים ודשבורדים</span></h3>
+        <p data-lang="en">Clear answers from your sales, cost and customer data.</p><p data-lang="he" lang="he">תשובות ברורות מנתוני המכירות, העלויות והלקוחות שלכם.</p>
+        <ul><li><span data-lang="en">P&amp;L, pricing and cost analysis</span><span data-lang="he" lang="he">ניתוח רווח והפסד, תמחור ועלויות</span></li><li><span data-lang="en">SQL, Python and Excel models</span><span data-lang="he" lang="he">מודלים ב-SQL, ‏Python ו-Excel</span></li><li><span data-lang="en">Dashboards your team will read</span><span data-lang="he" lang="he">דשבורדים שהצוות באמת יקרא</span></li></ul>
+        <p class="service-proof"><span data-lang="en">Background: MBA in Big Data &amp; Analytics, 3 years running a business</span><span data-lang="he" lang="he">רקע: MBA בביג דאטה ואנליטיקה, 3 שנים של ניהול ובעלות עסק</span></p>
+      </article>
+    </div>
+    <div class="services-cta reveal">
+      <p data-lang="en">Is a manual process eating your team’s week?<span>Tell me about it. The first conversation is free.</span></p><p data-lang="he" lang="he">יש תהליך ידני שגוזל לצוות שלכם את השבוע?<span>ספרו לי עליו. השיחה הראשונה בחינם.</span></p>
+      <a class="btn btn-gold" href="https://wa.me/972542165560" data-wa target="_blank" rel="noopener"><svg aria-hidden="true" focusable="false"><use href="#i-wa"/></svg><span data-lang="en">Message me on WhatsApp</span><span data-lang="he" lang="he">שלחו לי הודעה בוואטסאפ</span></a>
+    </div>
+  </div>
+</section>
 
-      <div class="exp-cards">
-
-        <article class="exp-card">
-          <span class="exp-period-badge">2023 &ndash; 2026</span>
-          <h3 class="exp-role">Co-Owner &amp; General Manager</h3>
-          <p class="exp-org">Food &amp; Beverage Business &mdash; Jerusalem</p>
-          <div class="exp-divider" aria-hidden="true"></div>
-          <ul class="exp-bullets">
-            <li>Held full P&amp;L accountability for a single-location operation with &#8362;8M annual revenue</li>
-            <li>Analyzed sales, financial data (P&amp;L), and business performance to optimize operations and drive profitability</li>
-            <li>Managed localized supply chain, inventory analytics, and product pricing</li>
-            <li>Recruited, trained, and led a team of 15 employees under high operational pressure</li>
-          </ul>
-        </article>
-
-        <article class="exp-card">
-          <span class="exp-period-badge">2023 &ndash; 2024</span>
-          <h3 class="exp-role">Business Consultant &amp; Analyst &mdash; HUBS-Aid Program</h3>
-          <p class="exp-org">Hebrew University of Jerusalem</p>
-          <div class="exp-divider" aria-hidden="true"></div>
-          <ul class="exp-bullets">
-            <li>Provided pro-bono analytical consulting to a small business in the Gaza-border region, as part of a university-led economic recovery initiative following October 7th</li>
-            <li>Analyzed cost structure and operational workflows, and evaluated pricing strategies to support the business&apos;s return to stability</li>
-            <li>Developed data-backed recovery plans and streamlined managerial processes based on quantitative evaluations</li>
-          </ul>
-        </article>
-
-        <article class="exp-card">
-          <span class="exp-period-badge">2020 &ndash; 2021</span>
-          <h3 class="exp-role">Project Coordinator &mdash; National Service</h3>
-          <p class="exp-org">Ministry of Education &mdash; Israel</p>
-          <div class="exp-divider" aria-hidden="true"></div>
-          <ul class="exp-bullets">
-            <li>Processed and verified financial guarantees for student accessibility projects, in amounts up to several hundred thousand ILS</li>
-            <li>Tracked project milestones and monitored budget commitments, ensuring alignment with regulatory and timeline requirements</li>
-            <li>Interfaced directly with public institutions, government ministries, and local authorities</li>
-          </ul>
-        </article>
-
+<section class="section" id="about" aria-labelledby="about-title">
+  <div class="container">
+    <span class="eyebrow"><span data-lang="en">About</span><span data-lang="he" lang="he">אודות</span></span>
+    <h2 class="section-title" id="about-title" style="margin-bottom:48px"><span data-lang="en">An owner’s instincts, <em>an analyst’s toolkit</em></span><span data-lang="he" lang="he">חשיבה של בעל עסק, <em>כלים של אנליסט</em></span></h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p data-lang="en">I hold an <strong>MBA from the Hebrew University</strong> (Big Data &amp; Analytics, Finance &amp; Banking), and spent three years with full P&amp;L ownership of a food &amp; beverage business, leading a team of 15.</p><p data-lang="he" lang="he">אני בעל <strong>MBA מהאוניברסיטה העברית</strong> (ביג דאטה ואנליטיקה, מימון ובנקאות), ובשלוש השנים האחרונות החזקתי באחריות P&amp;L מלאה על עסק מזון ומשקאות וניהלתי צוות של 15 עובדים.</p>
+        <p data-lang="en">I work with SQL, Python and Excel to analyze data and support business decisions, and I build AI-powered tools end to end. Two systems I developed independently are used in production by a real-estate office, and my household finance app uses the OpenAI API to read receipts.</p><p data-lang="he" lang="he">אני עובד עם SQL, ‏Python ו-Excel כדי לנתח נתונים ולתמוך בהחלטות עסקיות, ובונה כלים מבוססי AI מקצה לקצה. שתי מערכות שפיתחתי לבד עובדות בפרודקשן במשרד נדל״ן, ואפליקציית ניהול התקציב שלי משתמשת ב-OpenAI API כדי לקרוא קבלות.</p>
+        <p data-lang="en">I’m looking for a data or business analysis role that combines quantitative skills with management experience.</p><p data-lang="he" lang="he">אני מחפש תפקיד בניתוח נתונים או ניתוח עסקי שמשלב יכולות כמותיות עם ניסיון ניהולי.</p>
+      </div>
+      <div class="pillars reveal" style="--d:120ms">
+        <div class="pillar"><div class="pillar-icon"><svg aria-hidden="true" focusable="false"><use href="#i-chart"/></svg></div><div><h3><span data-lang="en">Analytics</span><span data-lang="he" lang="he">אנליטיקה</span></h3><p data-lang="en">SQL, Python and Excel; predictive modeling and statistical analysis.</p><p data-lang="he" lang="he">SQL, ‏Python ו-Excel; מודלים חזויים וניתוח סטטיסטי.</p></div></div>
+        <div class="pillar"><div class="pillar-icon"><svg aria-hidden="true" focusable="false"><use href="#i-bank"/></svg></div><div><h3><span data-lang="en">Finance</span><span data-lang="he" lang="he">מימון</span></h3><p data-lang="en">P&amp;L management, pricing strategy and financial modeling.</p><p data-lang="he" lang="he">ניהול רווח והפסד, אסטרטגיית תמחור ומודלים פיננסיים.</p></div></div>
+        <div class="pillar"><div class="pillar-icon"><svg aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></div><div><h3><span data-lang="en">Building with AI</span><span data-lang="he" lang="he">פיתוח עם AI</span></h3><p data-lang="en">OpenAI API, AI agents, RAG and n8n, shipped to real users.</p><p data-lang="he" lang="he">OpenAI API, סוכני AI, ‏RAG ו-n8n, במוצרים שמשתמשים אמיתיים עובדים איתם.</p></div></div>
+        <div class="pillar"><div class="pillar-icon"><svg aria-hidden="true" focusable="false"><use href="#i-users"/></svg></div><div><h3><span data-lang="en">Leadership</span><span data-lang="he" lang="he">ניהול</span></h3><p data-lang="en">Recruiting, training and leading a team of 15 under pressure.</p><p data-lang="he" lang="he">גיוס, הכשרה וניהול צוות של 15 עובדים בלחץ תפעולי.</p></div></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ─── Education ─────────────────────────────────────────────────────── -->
-  <section id="education" aria-labelledby="edu-heading">
-    <div class="container">
-      <span class="section-eyebrow" aria-hidden="true">Academic Background</span>
-      <h2 id="edu-heading" class="section-title">Education &amp; <em>Credentials</em></h2>
-
-      <div class="edu-layout">
-
-        <div class="edu-sidebar">
-          <p class="edu-sidebar-title">A foundation built at Israel&apos;s leading research university</p>
-          <p class="edu-sidebar-body">
-            All degrees held at the <strong>Hebrew University of Jerusalem</strong> &mdash; Israel&apos;s top-ranked
-            institution and a global research leader. Combined GPA across undergraduate and MBA programs
-            demonstrates consistent academic excellence.
-          </p>
+<section class="section section--paper2" id="experience" aria-labelledby="exp-title">
+  <div class="container">
+    <span class="eyebrow"><span data-lang="en">Experience</span><span data-lang="he" lang="he">ניסיון</span></span>
+    <h2 class="section-title" id="exp-title" style="margin-bottom:56px"><span data-lang="en">Where I’ve <em>worked</em></span><span data-lang="he" lang="he">איפה <em>עבדתי</em></span></h2>
+    <ol class="timeline">
+      
+      <li class="tl-item reveal" style="--d:0ms">
+        <div class="tl-when"><bdi dir="ltr">2023 – 2026</bdi></div>
+        <div class="tl-card">
+          <h3 class="tl-role"><span data-lang="en">Co-Owner &amp; General Manager</span><span data-lang="he" lang="he">שותף ומנכ״ל</span></h3>
+          <p class="tl-org"><span data-lang="en">Food &amp; Beverage Business</span><span data-lang="he" lang="he">עסק מזון ומשקאות</span></p>
+          <ul><li><span data-lang="en">Held full P&amp;L accountability for a single-location operation.</span><span data-lang="he" lang="he">אחריות P&amp;L מלאה על עסק בסניף יחיד.</span></li><li><span data-lang="en">Analyzed sales, financial data (P&amp;L) and business performance to improve operations and profitability.</span><span data-lang="he" lang="he">ניתוח מכירות, נתונים פיננסיים (P&amp;L) וביצועים עסקיים לשיפור התפעול והרווחיות.</span></li><li><span data-lang="en">Managed suppliers, inventory and product pricing.</span><span data-lang="he" lang="he">ניהול ספקים, מלאי ותמחור מוצרים.</span></li><li><span data-lang="en">Recruited, trained and led a team of 15 employees under high operational pressure.</span><span data-lang="he" lang="he">גיוס, הכשרה וניהול צוות של 15 עובדים תחת לחץ תפעולי גבוה.</span></li></ul>
         </div>
+      </li>
+      
+      <li class="tl-item reveal" style="--d:80ms">
+        <div class="tl-when"><bdi dir="ltr">2023 – 2024</bdi></div>
+        <div class="tl-card">
+          <h3 class="tl-role"><span data-lang="en">Business Consultant &amp; Analyst</span><span data-lang="he" lang="he">יועץ ואנליסט עסקי</span></h3>
+          <p class="tl-org"><span data-lang="en">HUBS-Aid Program, Hebrew University</span><span data-lang="he" lang="he">תוכנית HUBS-Aid, האוניברסיטה העברית</span></p>
+          <ul><li><span data-lang="en">Worked hands-on with the owner of a small business in the Gaza-border region as a pro-bono consultant, part of a university-led economic recovery initiative following October 7th.</span><span data-lang="he" lang="he">ליווי צמוד, בהתנדבות, של בעל עסק קטן בעוטף עזה, במסגרת יוזמת שיקום כלכלי של האוניברסיטה לאחר 7 באוקטובר.</span></li><li><span data-lang="en">Analyzed cost structure and workflows, identified key blockers and recommended actions to restore the business’s stability.</span><span data-lang="he" lang="he">ניתוח מבנה העלויות ותהליכי העבודה, זיהוי החסמים המרכזיים והמלצה על צעדים להחזרת העסק ליציבות.</span></li></ul>
+        </div>
+      </li>
+      
+      <li class="tl-item reveal" style="--d:160ms">
+        <div class="tl-when"><bdi dir="ltr">2020 – 2021</bdi></div>
+        <div class="tl-card">
+          <h3 class="tl-role"><span data-lang="en">Project Coordinator (National Service)</span><span data-lang="he" lang="he">רכז פרויקטים (שירות לאומי)</span></h3>
+          <p class="tl-org"><span data-lang="en">Ministry of Education</span><span data-lang="he" lang="he">משרד החינוך</span></p>
+          <ul><li><span data-lang="en">Processed and monitored budget commitments for student accessibility projects, of up to several hundred thousand ₪.</span><span data-lang="he" lang="he">טיפול ומעקב אחר התחייבויות תקציביות לפרויקטי הנגשה לתלמידים, בהיקפים של עד מאות אלפי ₪.</span></li><li><span data-lang="en">Managed milestones and stakeholder communication across government ministries, public institutions and local authorities.</span><span data-lang="he" lang="he">ניהול אבני דרך ותקשורת עם משרדי ממשלה, מוסדות ציבור ורשויות מקומיות.</span></li></ul>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
 
-        <div class="timeline" role="list">
+<section class="section" id="education" aria-labelledby="edu-title">
+  <div class="container">
+    <span class="eyebrow"><span data-lang="en">Education &amp; skills</span><span data-lang="he" lang="he">השכלה וכישורים</span></span>
+    <h2 class="section-title" id="edu-title" style="margin-bottom:48px"><span data-lang="en">What I <em>studied</em> and use</span><span data-lang="he" lang="he">מה <em>למדתי</em> ובמה אני עובד</span></h2>
+    <div class="edu-grid">
+      <article class="edu reveal">
+        <span class="edu-when"><bdi dir="ltr">2024 – 2026</bdi></span>
+        <h3><span data-lang="en">MBA, Master of Business Administration</span><span data-lang="he" lang="he">MBA, תואר שני במנהל עסקים</span></h3>
+        <p class="edu-school"><span data-lang="en">Hebrew University of Jerusalem</span><span data-lang="he" lang="he">האוניברסיטה העברית בירושלים</span></p>
+        <p data-lang="en" class="edu-detail">Specializations: Big Data &amp; Analytics, Finance &amp; Banking.</p><p data-lang="he" class="edu-detail" lang="he">התמחויות: ביג דאטה ואנליטיקה, מימון ובנקאות.</p>
+        <span class="edu-gpa"><span data-lang="en">GPA 87</span><span data-lang="he" lang="he">ממוצע 87</span></span>
+      </article>
+      <article class="edu reveal" style="--d:80ms">
+        <span class="edu-when"><bdi dir="ltr">2021 – 2024</bdi></span>
+        <h3><span data-lang="en">B.A. Business Administration &amp; Criminology</span><span data-lang="he" lang="he">B.A. במנהל עסקים וקרימינולוגיה</span></h3>
+        <p class="edu-school"><span data-lang="en">Hebrew University of Jerusalem</span><span data-lang="he" lang="he">האוניברסיטה העברית בירושלים</span></p>
+        <span class="edu-gpa"><span data-lang="en">GPA 88</span><span data-lang="he" lang="he">ממוצע 88</span></span>
+      </article>
+      <article class="edu reveal" style="--d:160ms">
+        <span class="edu-when">2026</span>
+        <h3><span data-lang="en">AI Developer Program (250 hrs)</span><span data-lang="he" lang="he">תוכנית AI Developer ‏(250 שעות)</span></h3>
+        <p class="edu-school"><span data-lang="en">Hi-Tech Academy, Hebrew University</span><span data-lang="he" lang="he">האקדמיה להייטק, האוניברסיטה העברית</span></p>
+        <p data-lang="en" class="edu-detail">Python, SQL, prompt engineering, RAG and embeddings, n8n, AI agents and process automation.</p><p data-lang="he" class="edu-detail" lang="he">Python, ‏SQL, הנדסת פרומפטים, RAG ו-embeddings, ‏n8n, סוכני AI ואוטומציה של תהליכים.</p>
+      </article>
+    </div>
+    <div class="skills-grid reveal">
+      <div class="skill-row"><h3><span data-lang="en">Data &amp; Analytics</span><span data-lang="he" lang="he">דאטה ואנליטיקה</span></h3><div class="chips"><span class="chip">SQL</span><span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">scikit-learn</span><span class="chip">Matplotlib / Seaborn</span><span class="chip"><span data-lang="en">Advanced Excel (modeling, pivots)</span><span data-lang="he" lang="he">Excel מתקדם (מודלים, פיבוטים)</span></span><span class="chip"><span data-lang="en">Dashboards</span><span data-lang="he" lang="he">דשבורדים</span></span></div></div>
+      <div class="skill-row"><h3><span data-lang="en">Development &amp; AI</span><span data-lang="he" lang="he">פיתוח ו-AI</span></h3><div class="chips"><span class="chip">JavaScript</span><span class="chip">HTML / CSS</span><span class="chip">Flask</span><span class="chip">Supabase</span><span class="chip">Git / GitHub</span><span class="chip">OpenAI API</span><span class="chip"><span data-lang="en">AI agents</span><span data-lang="he" lang="he">סוכני AI</span></span><span class="chip">Claude Code</span><span class="chip">Cursor</span></div></div>
+      <div class="skill-row"><h3><span data-lang="en">Business</span><span data-lang="he" lang="he">עסקים</span></h3><div class="chips"><span class="chip"><span data-lang="en">P&amp;L management</span><span data-lang="he" lang="he">ניהול רווח והפסד</span></span><span class="chip"><span data-lang="en">Pricing strategy</span><span data-lang="he" lang="he">אסטרטגיית תמחור</span></span><span class="chip"><span data-lang="en">Financial modeling</span><span data-lang="he" lang="he">מודלים פיננסיים</span></span><span class="chip"><span data-lang="en">Statistical analysis</span><span data-lang="he" lang="he">ניתוח סטטיסטי</span></span><span class="chip"><span data-lang="en">Process analysis</span><span data-lang="he" lang="he">ניתוח תהליכים</span></span><span class="chip">ClickUp</span></div></div>
+      <div class="skill-row"><h3><span data-lang="en">Languages</span><span data-lang="he" lang="he">שפות</span></h3><div class="chips"><span class="chip"><span data-lang="en">Hebrew · native</span><span data-lang="he" lang="he">עברית · שפת אם</span></span><span class="chip"><span data-lang="en">English · professional working proficiency</span><span data-lang="he" lang="he">אנגלית · רמה מקצועית</span></span></div></div>
+    </div>
+  </div>
+</section>
 
-          <div class="timeline-item" role="listitem">
-            <div class="timeline-node">
-              <div class="timeline-dot"></div>
-            </div>
-            <div class="timeline-card">
-              <div class="timeline-year">2024 &ndash; 2026</div>
-              <h3 class="timeline-degree">MBA &mdash; Master of Business Administration</h3>
-              <p class="timeline-school">Hebrew University of Jerusalem &mdash; Seminar: customer churn analysis for a commercial dataset (model training &amp; evaluation)</p>
-              <div class="badge-row">
-                <span class="badge badge-navy">GPA: 87</span>
-                <span class="badge badge-gold">Analytics &amp; Big Data</span>
-                <span class="badge badge-gold">Finance &amp; Banking</span>
-                <span class="badge badge-outline">Graduation Complete</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-item" role="listitem">
-            <div class="timeline-node">
-              <div class="timeline-dot"></div>
-            </div>
-            <div class="timeline-card">
-              <div class="timeline-year">2021 &ndash; 2024</div>
-              <h3 class="timeline-degree">B.A. Business Administration &amp; Criminology</h3>
-              <p class="timeline-school">Hebrew University of Jerusalem</p>
-              <div class="badge-row">
-                <span class="badge badge-navy">GPA: 88</span>
-                <span class="badge badge-outline">Business Administration</span>
-                <span class="badge badge-outline">Criminology</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-item" role="listitem">
-            <div class="timeline-node">
-              <div class="timeline-dot"></div>
-            </div>
-            <div class="timeline-card">
-              <div class="timeline-year">2026</div>
-              <h3 class="timeline-degree">AI Developer Course</h3>
-              <p class="timeline-school">Executive Training Center, Hebrew University &mdash; The Hi-Tech Academy</p>
-              <div class="badge-row">
-                <span class="badge badge-outline">250 Hours</span>
-                <span class="badge badge-gold">Python</span>
-                <span class="badge badge-gold">SQL</span>
-                <span class="badge badge-gold">AI Agents</span>
-                <span class="badge badge-outline">Prompt Engineering</span>
-                <span class="badge badge-outline">Automation</span>
-              </div>
-            </div>
-          </div>
-
+<section class="section section--ink" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <span class="eyebrow"><span data-lang="en">Contact</span><span data-lang="he" lang="he">צור קשר</span></span>
+    <h2 class="section-title" id="contact-title" style="margin-bottom:48px"><span data-lang="en">Let’s <em>talk</em></span><span data-lang="he" lang="he">בואו <em>נדבר</em></span></h2>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p data-lang="en" class="contact-big">Hiring for a data or business analyst role, or have a process that should run itself? <em>I’d like to hear about it.</em></p><p data-lang="he" class="contact-big" lang="he">מגייסים לתפקיד Data או Business Analyst, או שיש לכם תהליך שהיה צריך לרוץ לבד מזמן? <em>אשמח לשמוע.</em></p>
+        <div class="avail">
+          <div class="avail-head"><span class="status-dot" aria-hidden="true"></span><span data-lang="en">Available now</span><span data-lang="he" lang="he">זמין עכשיו</span></div>
+          <p data-lang="en">Open to full-time data and business analysis roles, and to selected freelance projects for small businesses.</p><p data-lang="he" lang="he">פתוח למשרה מלאה בתחומי ניתוח נתונים וניתוח עסקי, ולפרויקטים נבחרים לעסקים קטנים.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ─── Projects ─────────────────────────────────────────────────────── -->
-  <section id="projects" aria-labelledby="projects-heading">
-    <div class="exp-bg" aria-hidden="true"></div>
-    <div class="exp-bg-glow" aria-hidden="true"></div>
-    <div class="container" style="position:relative;z-index:1;">
-      <span class="section-eyebrow on-dark" aria-hidden="true">Independent Work</span>
-      <h2 id="projects-heading" class="section-title on-dark">Featured <em>Projects</em></h2>
-
-      <div class="exp-cards">
-
-        <article class="exp-card">
-          <span class="exp-period-badge">Live App</span>
-          <h3 class="exp-role">Household Finance Management App</h3>
-          <p class="exp-org">Independent Project &mdash; Built &amp; Deployed End-to-End</p>
-          <div class="exp-divider" aria-hidden="true"></div>
-          <p class="proj-desc">
-            Web application for tracking and analyzing household income, expenses, and cost categories.
-            Integrated the OpenAI API to extract structured data from receipt images and auto-categorize
-            transactions. Built end-to-end independently and deployed to production.
-          </p>
-          <div class="proj-tags">
-            <span class="proj-tag">Python (Flask)</span>
-            <span class="proj-tag">Supabase</span>
-            <span class="proj-tag">OpenAI API</span>
-            <span class="proj-tag">Railway</span>
-          </div>
-          <a href="https://smartfin.up.railway.app/" target="_blank" rel="noopener" class="proj-link">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
-              <polyline points="15 3 21 3 21 9"/>
-              <line x1="10" y1="14" x2="21" y2="3"/>
-            </svg>
-            View Live App
-          </a>
-        </article>
-
-        <article class="exp-card">
-          <span class="exp-period-badge">Production</span>
-          <h3 class="exp-role">Marketing Ad-Generation Platform</h3>
-          <p class="exp-org">Built for a Real Estate Agency</p>
-          <div class="exp-divider" aria-hidden="true"></div>
-          <p class="proj-desc">
-            Platform built for a real estate agency that automatically generates listing advertisements.
-            Deployed and actively used in production by the client.
-          </p>
-          <div class="proj-tags">
-            <span class="proj-tag">AI-Generated Content</span>
-            <span class="proj-tag">Real Estate</span>
-            <span class="proj-tag">Client Deployment</span>
-          </div>
-        </article>
-
-        <article class="exp-card">
-          <span class="exp-period-badge">MBA Seminar</span>
-          <h3 class="exp-role">Customer Churn Analysis</h3>
-          <p class="exp-org">Academic Research &mdash; Predictive Modeling</p>
-          <div class="exp-divider" aria-hidden="true"></div>
-          <p class="proj-desc">
-            Analyzed behavioral patterns in customer data to identify churn drivers and build a predictive
-            model, with visualization of key customer segments.
-          </p>
-          <div class="proj-tags">
-            <span class="proj-tag">Python (Pandas)</span>
-            <span class="proj-tag">scikit-learn</span>
-            <span class="proj-tag">Data Visualization</span>
-          </div>
-        </article>
-
+      <div class="contact-list reveal" style="--d:120ms">
+        <a class="contact-item" href="mailto:matanshneor1@gmail.com"><span class="contact-icon"><svg aria-hidden="true" focusable="false"><use href="#i-mail"/></svg></span><span><span class="contact-label"><span data-lang="en">Email</span><span data-lang="he" lang="he">מייל</span></span><span class="contact-value" style="display:block">matanshneor1@gmail.com</span></span></a>
+        <a class="contact-item" href="https://www.linkedin.com/in/matan-shneor-5830583a1/" target="_blank" rel="noopener"><span class="contact-icon"><svg aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg></span><span><span class="contact-label"><span data-lang="en">LinkedIn</span><span data-lang="he" lang="he">לינקדאין</span></span><span class="contact-value" style="display:block">linkedin.com/in/matan-shneor</span></span></a>
+        <a class="contact-item" href="https://wa.me/972542165560" data-wa target="_blank" rel="noopener"><span class="contact-icon"><svg aria-hidden="true" focusable="false"><use href="#i-wa"/></svg></span><span><span class="contact-label"><span data-lang="en">WhatsApp · Phone</span><span data-lang="he" lang="he">וואטסאפ · טלפון</span></span><span class="contact-value" style="display:block">054-2165560</span></span></a>
+        <a class="contact-item" href="https://github.com/matanshneor" target="_blank" rel="noopener"><span class="contact-icon"><svg aria-hidden="true" focusable="false"><use href="#i-github"/></svg></span><span><span class="contact-label"><span data-lang="en">GitHub</span><span data-lang="he" lang="he">גיטהאב</span></span><span class="contact-value" style="display:block">github.com/matanshneor</span></span></a>
+        <a download class="contact-item" href="assets/Matan-Shneor-CV.pdf"><span class="contact-icon"><svg aria-hidden="true" focusable="false"><use href="#i-download"/></svg></span><span><span class="contact-label"><span data-lang="en">CV</span><span data-lang="he" lang="he">קורות חיים</span></span><span class="contact-value" style="display:block"><span data-lang="en">Download PDF</span><span data-lang="he" lang="he" dir="rtl">הורדת PDF</span></span></span></a>
       </div>
     </div>
-  </section>
-
-  <!-- ─── Skills ───────────────────────────────────────────────────────── -->
-  <section id="skills" aria-labelledby="skills-heading">
-    <div class="container">
-      <span class="section-eyebrow" aria-hidden="true">Core Competencies</span>
-      <h2 id="skills-heading" class="section-title">Skills &amp; <em>Expertise</em></h2>
-
-      <div class="skills-grid">
-
-        <div class="skill-group">
-          <div class="skill-group-header">
-            <div class="skill-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <polyline points="16 18 22 12 16 6"/>
-                <polyline points="8 6 2 12 8 18"/>
-              </svg>
-            </div>
-            <h3 class="skill-group-name">Programming &amp; Databases</h3>
-          </div>
-          <div class="skill-chips">
-            <span class="skill-chip">Python (Pandas / NumPy)</span>
-            <span class="skill-chip">Matplotlib / Seaborn</span>
-            <span class="skill-chip">SQL</span>
-            <span class="skill-chip">Git / GitHub</span>
-            <span class="skill-chip">Advanced Excel (Modeling, Pivots)</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <div class="skill-group-header">
-            <div class="skill-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <rect x="8" y="8" width="8" height="8" rx="1"/>
-                <rect x="4" y="4" width="16" height="16" rx="2"/>
-                <path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/>
-              </svg>
-            </div>
-            <h3 class="skill-group-name">AI &amp; Automation</h3>
-          </div>
-          <div class="skill-chips">
-            <span class="skill-chip">Cursor</span>
-            <span class="skill-chip">Claude Code</span>
-            <span class="skill-chip">Prompt Engineering</span>
-            <span class="skill-chip">AI Agents</span>
-            <span class="skill-chip">Process Automation</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <div class="skill-group-header">
-            <div class="skill-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <rect x="2" y="7" width="20" height="14" rx="2"/>
-                <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/>
-                <line x1="12" y1="12" x2="12" y2="16"/>
-                <line x1="10" y1="14" x2="14" y2="14"/>
-              </svg>
-            </div>
-            <h3 class="skill-group-name">Business Operations</h3>
-          </div>
-          <div class="skill-chips">
-            <span class="skill-chip">P&amp;L Management</span>
-            <span class="skill-chip">Financial Modeling</span>
-            <span class="skill-chip">Pricing Strategy</span>
-            <span class="skill-chip">Supply Chain &amp; Inventory Analytics</span>
-            <span class="skill-chip">Statistical Analysis &amp; Regression</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <div class="skill-group-header">
-            <div class="skill-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
-                <polyline points="17 6 23 6 23 12"/>
-              </svg>
-            </div>
-            <h3 class="skill-group-name">Business Analytics</h3>
-          </div>
-          <div class="skill-chips">
-            <span class="skill-chip">Data-Driven Decision Making</span>
-            <span class="skill-chip">Process Optimization</span>
-            <span class="skill-chip">Teamwork &amp; Leadership</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <div class="skill-group-header">
-            <div class="skill-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="2" y1="12" x2="22" y2="12"/>
-                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
-              </svg>
-            </div>
-            <h3 class="skill-group-name">Languages</h3>
-          </div>
-          <div class="skill-chips">
-            <span class="skill-chip">Hebrew &mdash; Native</span>
-            <span class="skill-chip">English &mdash; Professional Working Proficiency</span>
-            <span class="skill-chip">Arabic &mdash; Basic</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <div class="skill-group-header">
-            <div class="skill-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-              </svg>
-            </div>
-            <h3 class="skill-group-name">Core Strengths</h3>
-          </div>
-          <div class="skill-chips">
-            <span class="skill-chip">Fast Learner</span>
-            <span class="skill-chip">Problem Solving</span>
-            <span class="skill-chip">Turning Data into Insights</span>
-          </div>
-        </div>
-
-      </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© <span data-year>2026</span> <span data-lang="en">Matan Shneor</span><span data-lang="he" lang="he">מתן שניאור</span></span>
+    <div class="footer-links">
+      <a href="#work"><span data-lang="en">Work</span><span data-lang="he" lang="he">עבודות</span></a>
+      <a href="https://www.linkedin.com/in/matan-shneor-5830583a1/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/matanshneor" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:matanshneor1@gmail.com"><span data-lang="en">Email</span><span data-lang="he" lang="he">מייל</span></a>
     </div>
-  </section>
-
-  <!-- ─── Contact ──────────────────────────────────────────────────────── -->
-  <section id="contact" aria-labelledby="contact-heading">
-    <div class="contact-bg" aria-hidden="true">
-      <div class="contact-bg-radial"></div>
-      <div class="contact-bg-grid"></div>
-    </div>
-    <div class="container">
-      <div class="on-dark">
-        <span class="section-eyebrow" aria-hidden="true">Let&apos;s Connect</span>
-        <h2 id="contact-heading" class="section-title">Open to <em>New Opportunities</em></h2>
-      </div>
-
-      <div class="contact-layout">
-        <div class="contact-left">
-          <p class="contact-headline">
-            Looking for a driven professional who can turn
-            <strong>data into strategy</strong> and
-            <strong>ideas into results</strong>?
-            Let&apos;s start a conversation.
-          </p>
-          <div class="avail-card">
-            <div class="avail-status">
-              <span class="avail-dot" aria-hidden="true"></span>
-              Available Now
-            </div>
-            <p class="avail-body">
-              Actively seeking a <strong>Data Analyst or Business Intelligence</strong> role
-              within a leading organization. Open to full-time positions starting immediately.
-            </p>
-          </div>
-        </div>
-
-        <div class="contact-right">
-          <a href="tel:054-216-5560" class="contact-item">
-            <div class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012.22.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 5.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 12.92v4z"/>
-              </svg>
-            </div>
-            <div>
-              <div class="contact-label">Phone</div>
-              <div class="contact-value">054-216-5560</div>
-            </div>
-          </a>
-
-          <a href="mailto:matanshneor1@gmail.com" class="contact-item">
-            <div class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-            </div>
-            <div>
-              <div class="contact-label">Email</div>
-              <div class="contact-value">matanshneor1@gmail.com</div>
-            </div>
-          </a>
-
-          <a href="https://www.linkedin.com/in/matan-shneor-5830583a1/" target="_blank" rel="noopener" class="contact-item">
-            <div class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zm2-3a2 2 0 100-4 2 2 0 000 4z"/>
-              </svg>
-            </div>
-            <div>
-              <div class="contact-label">LinkedIn</div>
-              <div class="contact-value">linkedin.com/in/matan-shneor</div>
-            </div>
-          </a>
-
-          <a href="https://github.com/matanshneor" target="_blank" rel="noopener" class="contact-item">
-            <div class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-              </svg>
-            </div>
-            <div>
-              <div class="contact-label">GitHub</div>
-              <div class="contact-value">github.com/matanshneor</div>
-            </div>
-          </a>
-
-          <div class="contact-item">
-            <div class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-            </div>
-            <div>
-              <div class="contact-label">Location</div>
-              <div class="contact-value">Jerusalem, Israel</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── Footer ───────────────────────────────────────────────────────── -->
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-brand">Matan <span>Shneor</span></div>
-      <p class="footer-note">&copy; 2026 &mdash; MBA, Hebrew University of Jerusalem</p>
-      <div class="footer-links">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ─── Scripts ───────────────────────────────────────────────────────── -->
-  <script>
-    // Nav scroll state
-    const nav = document.getElementById('site-nav');
-    const scrollThreshold = 80;
-    let ticking = false;
-    function updateNav() {
-      if (window.scrollY > scrollThreshold) {
-        nav.classList.add('scrolled');
-      } else {
-        nav.classList.remove('scrolled');
-      }
-      ticking = false;
-    }
-    window.addEventListener('scroll', () => {
-      if (!ticking) {
-        requestAnimationFrame(updateNav);
-        ticking = true;
-      }
-    }, { passive: true });
-
-    // Mobile drawer
-    const toggle = document.getElementById('nav-toggle');
-    const drawer = document.getElementById('nav-drawer');
-    toggle.addEventListener('click', () => {
-      const isOpen = drawer.classList.contains('open');
-      drawer.classList.toggle('open', !isOpen);
-      toggle.classList.toggle('open', !isOpen);
-      toggle.setAttribute('aria-expanded', String(!isOpen));
-    });
-    function closeDrawer() {
-      drawer.classList.remove('open');
-      toggle.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-    }
-    // Close drawer on outside click
-    document.addEventListener('click', (e) => {
-      if (!nav.contains(e.target) && !drawer.contains(e.target)) {
-        closeDrawer();
-      }
-    });
-    // Close on Escape
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeDrawer();
-    });
-  </script>
-
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/972542165560" data-wa target="_blank" rel="noopener" data-aria-en="Message Matan on WhatsApp" data-aria-he="שליחת הודעת וואטסאפ למתן" aria-label="Message Matan on WhatsApp"><svg aria-hidden="true" focusable="false"><use href="#i-wa"/></svg></a>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>

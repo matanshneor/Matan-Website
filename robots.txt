@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://matanshneor.github.io/Matan-Website/sitemap.xml
