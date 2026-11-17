@@ -7,7 +7,7 @@ Hebrew version: add `?lang=he` to any page URL, or use the EN / עב switch in t
 
 ## What's on the site
 
-- **Home (`index.html`)** — hero with an annotated career-trajectory chart, key numbers, a filterable project grid, services for businesses, about, experience, education & skills, contact, and a floating WhatsApp button.
+- **Home (`index.html`)** — hero with an annotated career-trajectory chart, key numbers, a filterable project grid, about, experience, education & skills, contact, and a floating WhatsApp button.
 - **Case studies (`projects/`)** — one page per project: challenge, what was built, screenshots, outcome, stack.
   - `remax-office.html` — RE/MAX Office Systems (CRM + ad generator)
   - `smartfin.html` — SmartFin household finance app
